@@ -1,0 +1,39 @@
+{
+    "patient_id": "PA000314",
+    "threshold": 0.75,
+    "metrics": {
+        "ground_truth_voxels": 294825,
+        "predicted_voxels": 405341,
+        "true_positive_voxels": 98306,
+        "false_positive_voxels": 307035,
+        "false_negative_voxels": 196519,
+        "dice": 0.28080769417538126,
+        "precision": 0.24252666273581996,
+        "recall": 0.3334384804545069,
+        "predicted_to_gt_ratio": 1.3748528788264225
+    },
+    "ground_truth_components": {
+        "component_count": 1,
+        "largest_component_voxels": 294825,
+        "top_5_component_sizes": [
+            294825
+        ]
+    },
+    "prediction_components": {
+        "component_count": 1033,
+        "largest_component_voxels": 42080,
+        "top_5_component_sizes": [
+            42080,
+            40134,
+            20493,
+            14252,
+            12871
+        ]
+    },
+    "selected_slices": {
+        "Axial": 231,
+        "Coronal": 229,
+        "Sagittal": 286
+    },
+    "test_set_evaluated": false
+}

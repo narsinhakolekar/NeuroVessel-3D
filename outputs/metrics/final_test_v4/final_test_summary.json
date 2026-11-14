@@ -1,0 +1,52 @@
+{
+    "project": "NeuroVessel",
+    "experiment": "V4 final held-out test evaluation",
+    "evaluation_status": "completed",
+    "test_set_evaluated": true,
+    "test_patients_evaluated": 15,
+    "test_patient_ids": [
+        "PA000026",
+        "PA000027",
+        "PA000056",
+        "PA000063",
+        "PA000070",
+        "PA000078",
+        "PA000109",
+        "PA000118",
+        "PA000125",
+        "PA000195",
+        "PA000236",
+        "PA000247",
+        "PA000284",
+        "PA000297",
+        "PA000309"
+    ],
+    "checkpoint_path": "outputs\\checkpoints\\unet_v4_hard_negative_best.pt",
+    "checkpoint_epoch_metadata": 8,
+    "checkpoint_sha256": "29fc4819791e8e7e2802449387a99dd5aa1532eb8eada2a82ab6ea7126003693",
+    "probability_threshold": 0.75,
+    "minimum_component_size_voxels": 5000,
+    "connectivity": 26,
+    "patch_size": 64,
+    "sliding_window_overlap": 0.25,
+    "inference_device": "cuda",
+    "macro_patient_metrics": {
+        "mean_dice": 0.25089754547062887,
+        "std_dice": 0.05585113514486065,
+        "mean_precision": 0.3200396492794155,
+        "std_precision": 0.07259482515290706,
+        "mean_recall": 0.21305408582101554,
+        "std_recall": 0.05932687465138027
+    },
+    "pooled_voxel_metrics": {
+        "micro_dice": 0.25293249340386964,
+        "micro_precision": 0.3202736255284288,
+        "micro_recall": 0.20898999606440363
+    },
+    "total_tp": 978148,
+    "total_fp": 2075953,
+    "total_fn": 3702210,
+    "total_inference_seconds": 249.36,
+    "evaluation_timestamp": "2026-11-03T02:23:13.260489+05:30",
+    "selection_note": "Threshold and component size were fixed using validation experiments before this held-out test evaluation. No test-set parameter tuning was performed."
+}

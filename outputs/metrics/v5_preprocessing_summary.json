@@ -1,0 +1,14 @@
+{
+  "target_spacing_mm": [
+    0.65,
+    0.65,
+    1.0
+  ],
+  "train_patients": 70,
+  "validation_patients": 15,
+  "test_patients_processed": false,
+  "results": {},
+  "processed_cases": 85,
+  "skipped_cases": 0,
+  "total_cases": 85
+}

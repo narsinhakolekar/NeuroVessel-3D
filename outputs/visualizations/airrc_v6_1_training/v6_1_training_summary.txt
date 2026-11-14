@@ -1,0 +1,10 @@
+NeuroVessel V6.1 training history summary
+Epochs recorded: 30
+Best epoch: 29
+Best mean foreground patch Dice: 81.09%
+PA patch Dice at best epoch: 80.63%
+PV patch Dice at best epoch: 81.54%
+Training loss at best epoch: 0.244105
+Validation loss at best epoch: 0.193298
+Final mean foreground patch Dice: 80.86%
+Note: these are patch-level validation metrics, not full-volume test metrics.

@@ -1,0 +1,26 @@
+{
+  "project": "NeuroVessel",
+  "model_version": "V6",
+  "task": "Three-class pulmonary artery and pulmonary vein segmentation",
+  "class_mapping": {
+    "0": "Background (original classes 0, 1 and 2)",
+    "1": "Pulmonary Artery (original class 3)",
+    "2": "Pulmonary Vein (original class 4)"
+  },
+  "training_patients_expected": 202,
+  "training_patients_processed": 202,
+  "validation_patients_expected": 26,
+  "validation_patients_processed": 26,
+  "locked_test_patients": 26,
+  "test_partition_loaded": false,
+  "total_background_voxels": 8846478437,
+  "total_pa_voxels": 50525263,
+  "total_pv_voxels": 50540235,
+  "successful_patients": 228,
+  "failed_patients": 0,
+  "all_verified": true,
+  "errors": [],
+  "manifest": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_manifest.csv",
+  "label_output_directory": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\data\\processed_airrc_v6\\labels_multiclass",
+  "runtime_seconds": 292.17674922943115
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.766599406003952,
+    "validation_patch_dice": 0.08153126697212154
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.411676761507988,
+    "validation_patch_dice": 0.002866486479777899
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.2700676392018795,
+    "validation_patch_dice": 0.014766214734374289
+  }
+]

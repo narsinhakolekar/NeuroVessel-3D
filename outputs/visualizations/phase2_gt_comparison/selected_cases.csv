@@ -1,0 +1,4 @@
+selection,patient_id,series_instance_uid,PA_dice,PV_dice,mean_fg_dice,axial_slice_index,coronal_slice_index,sagittal_slice_index,figure
+worst,LIDC-IDRI-0118,1.3.6.1.4.1.14519.5.2.1.6279.6001.129982010889624423230394257528,0.689408743230417,0.6274047168501975,0.6584067300403073,186,218,178,outputs\visualizations\phase2_gt_comparison\worst_LIDC-IDRI-0118_orthogonal_comparison.png
+median,LIDC-IDRI-0860,1.3.6.1.4.1.14519.5.2.1.6279.6001.200725988589959521302320481687,0.7673279189751793,0.7451958704197796,0.7562618946974795,189,165,213,outputs\visualizations\phase2_gt_comparison\median_LIDC-IDRI-0860_orthogonal_comparison.png
+best,LIDC-IDRI-0386,1.3.6.1.4.1.14519.5.2.1.6279.6001.264251211689085893915477907261,0.8227661795613873,0.8057587325042072,0.8142624560327972,158,185,151,outputs\visualizations\phase2_gt_comparison\best_LIDC-IDRI-0386_orthogonal_comparison.png

@@ -1,0 +1,41 @@
+{
+  "project": "NeuroVessel",
+  "version": "V6.1",
+  "task": "Three-class PA/PV segmentation with explicit background learning",
+  "architecture": "Residual 3D U-Net",
+  "base_channels": 8,
+  "trainable_parameters": 1435027,
+  "input_channels": 1,
+  "output_classes": 3,
+  "class_mapping": {
+    "0": "Background",
+    "1": "Pulmonary artery",
+    "2": "Pulmonary vein"
+  },
+  "patch_size": 96,
+  "patches_per_patient": 3,
+  "training_sampling": [
+    "One PA-centred patch",
+    "One PV-centred patch",
+    "One background-centred patch with CT intensity above configured HU minimum"
+  ],
+  "background_min_hu": -950.0,
+  "class_weights": [
+    0.5,
+    1.0,
+    1.0
+  ],
+  "loss": "0.5 weighted cross entropy + 0.5 foreground soft Dice",
+  "window_low": -1000,
+  "window_high": 1000,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0002,
+  "weight_decay": 1e-05,
+  "scheduler": "ReduceLROnPlateau",
+  "validation_method": "Same deterministic PA-centred and PV-centred patch validation as V6. Metrics remain patch-level.",
+  "seed": 42,
+  "amp": true,
+  "device": "cuda",
+  "smoke_test": false,
+  "test_partition_loaded": false
+}

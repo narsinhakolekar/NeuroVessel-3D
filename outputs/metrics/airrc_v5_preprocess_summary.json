@@ -1,0 +1,36 @@
+{
+  "total_cases": 254,
+  "processed_or_existing_verified": 254,
+  "errors": 0,
+  "split_counts": {
+    "train": 202,
+    "validation": 26,
+    "test": 26
+  },
+  "contrast_counts": {
+    "Contrast-Enhanced": 232,
+    "Non-Contrast": 22
+  },
+  "output_images": "data\\processed_airrc_v5\\images",
+  "output_pa_masks": "data\\processed_airrc_v5\\labels_pa",
+  "split_manifest": "outputs\\metrics\\airrc_v5_splits.csv",
+  "case_manifest": "outputs\\metrics\\airrc_v5_preprocess_manifest.csv",
+  "intensity_policy": "Store resampled source intensity as float32 without clipping/normalization; compare candidate windows during training.",
+  "intensity_scale_note": "Values are stored as read from LUNA16 MetaImage data; independent HU calibration verification remains outstanding.",
+  "candidate_windows_for_training": [
+    [
+      -1000,
+      700
+    ],
+    [
+      -1000,
+      1000
+    ],
+    [
+      -1000,
+      1500
+    ]
+  ],
+  "seed": 42,
+  "errors_detail": []
+}

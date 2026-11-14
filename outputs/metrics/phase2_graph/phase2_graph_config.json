@@ -1,0 +1,19 @@
+{
+    "experiment": "Phase 2 graph-based skeleton analysis",
+    "cases": 26,
+    "classes": {
+        "1": "PA",
+        "2": "PV"
+    },
+    "skeletonization": "scikit-image skeletonize, Lee method",
+    "graph_library": "Skan",
+    "skan_version": "0.13.0",
+    "array_axis_order": "Z,Y,X",
+    "spacing_source_order": "SimpleITK X,Y,Z",
+    "skan_spacing_order": "Z,Y,X",
+    "graph_endpoint_definition": "Graph nodes with degree 1",
+    "graph_junction_candidate_definition": "Graph nodes with degree >= 3",
+    "interpretation_warning": "Graph-degree candidates and graph paths are digital skeleton measurements, not validated anatomical endpoints, bifurcations or branches.",
+    "prediction_masks_modified": false,
+    "test_set_used_for_tuning": false
+}

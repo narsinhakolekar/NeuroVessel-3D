@@ -1,0 +1,22 @@
+{
+    "project": "NeuroVessel",
+    "phase": "2C",
+    "cases": 26,
+    "prediction_source": "outputs\\predictions\\airrc_v6_1_final_test",
+    "classes": {
+        "1": "PA",
+        "2": "PV"
+    },
+    "skeletonization": "scikit-image skeletonize, method=lee",
+    "connectivity": "26-neighbour",
+    "endpoint_rule": "exactly one occupied 26-neighbour",
+    "junction_rule": "at least three occupied 26-neighbours",
+    "length_estimate": "skeleton voxel count multiplied by mean voxel spacing; coarse proxy, not graph-based physical centreline length",
+    "limitations": [
+        "Predicted masks, not ground-truth anatomy",
+        "Digital endpoints and junctions are not validated anatomical branches",
+        "Skeletonization can introduce topology artifacts",
+        "No PH diagnosis or risk prediction",
+        "No test-set tuning performed"
+    ]
+}

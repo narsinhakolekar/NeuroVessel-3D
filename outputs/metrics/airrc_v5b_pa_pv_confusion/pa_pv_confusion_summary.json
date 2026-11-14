@@ -1,0 +1,89 @@
+{
+  "project": "NeuroVessel",
+  "model": "V5B Residual 3D U-Net",
+  "experiment": "PA versus PV confusion audit",
+  "threshold": 0.7,
+  "patients_evaluated": 26,
+  "test_partition_loaded": false,
+  "original_pa_annotation_exact_match": true,
+  "metrics": {
+    "dice": {
+      "mean": 0.6735096799904604,
+      "median": 0.6895246898191698,
+      "std": 0.05607738310567806
+    },
+    "precision": {
+      "mean": 0.5938010066918147,
+      "median": 0.6067135203935585,
+      "std": 0.06743147999106576
+    },
+    "recall": {
+      "mean": 0.7843612124299901,
+      "median": 0.799003031500723,
+      "std": 0.05750264008901881
+    },
+    "specificity": {
+      "mean": 0.9966511322272887,
+      "median": 0.9967694315134176,
+      "std": 0.0009905148686023407
+    },
+    "pv_overlap_fraction_of_false_positives": {
+      "mean": 0.5723678118021461,
+      "median": 0.5545175039283542,
+      "std": 0.12821857118704458
+    },
+    "pv_overlap_fraction_of_all_predictions": {
+      "mean": 0.23108454030027145,
+      "median": 0.2190414692395434,
+      "std": 0.060570581256759265
+    },
+    "pv_voxel_prediction_rate": {
+      "mean": 0.3254731048054366,
+      "median": 0.29744491459784805,
+      "std": 0.09079392450543426
+    },
+    "background_share_of_false_positives": {
+      "mean": 0.3990216078470106,
+      "median": 0.41177847409141977,
+      "std": 0.12803135040024108
+    },
+    "airway_lumen_share_of_false_positives": {
+      "mean": 0.004914600219970178,
+      "median": 0.00505283999601122,
+      "std": 0.0026051465293463966
+    },
+    "airway_wall_share_of_false_positives": {
+      "mean": 0.023695980130873148,
+      "median": 0.024286186630970853,
+      "std": 0.009916926867267308
+    }
+  },
+  "voxel_totals": {
+    "predicted_pa_voxels": 8035642,
+    "gt_pa_voxels": 6026095,
+    "gt_pv_voxels": 5670579,
+    "true_positive_pa_voxels": 4759144,
+    "false_negative_pa_voxels": 1266951,
+    "false_positive_total_voxels": 3276498,
+    "predicted_pa_on_background": 1344286,
+    "predicted_pa_on_airway_lumen": 15715,
+    "predicted_pa_on_airway_wall": 74131,
+    "predicted_pa_on_pv": 1842366
+  },
+  "micro_dice": 0.6768927622526293,
+  "micro_precision": 0.5922543587680984,
+  "micro_recall": 0.789755886689473,
+  "pooled_pv_share_of_false_positives": 0.5622973064534146,
+  "pooled_pv_voxel_prediction_rate": 0.32489909760537683,
+  "pooled_pv_overlap_fraction_of_all_predictions": 0.2292742757828186,
+  "pooled_background_share_of_false_positives": 0.41028134306811725,
+  "pooled_airway_lumen_share_of_false_positives": 0.004796279442258167,
+  "pooled_airway_wall_share_of_false_positives": 0.022625071036210004,
+  "runtime_seconds": 28.85387682914734,
+  "interpretation_limitations": [
+    "Prediction overlap with PV is a spatial false-positive attribution, not proof of the model's internal semantic reasoning.",
+    "False positives outside PA and PV may involve other vessels, airways, background or annotation boundary differences.",
+    "This analysis does not establish that all remaining errors are caused by PA-PV confusion.",
+    "All comparisons use original AirRC class labels and verified matching image geometry."
+  ]
+}

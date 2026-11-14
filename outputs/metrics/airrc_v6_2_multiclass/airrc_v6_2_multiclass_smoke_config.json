@@ -1,0 +1,56 @@
+{
+  "project": "NeuroVessel",
+  "version": "V6.2",
+  "task": "Three-class pulmonary artery and pulmonary vein segmentation",
+  "architecture": "V6 Residual 3D U-Net",
+  "base_channels": 8,
+  "trainable_parameters": 1435027,
+  "input_channels": 1,
+  "output_classes": 3,
+  "class_mapping": {
+    "0": "Background",
+    "1": "Pulmonary_Artery",
+    "2": "Pulmonary_Vein"
+  },
+  "patch_size": 64,
+  "batch_size": 1,
+  "patches_per_patient": 3,
+  "training_sampling": {
+    "PA": "One PA-centred patch",
+    "PV": "One PV-centred patch",
+    "background": {
+      "broad_probability": 0.5,
+      "dense_probability": 0.5,
+      "broad_stored_intensity_exclusive": -950.0,
+      "dense_stored_intensity_exclusive": 0.0,
+      "ground_truth_condition": "label == 0"
+    }
+  },
+  "class_weights": [
+    0.5,
+    1.0,
+    1.0
+  ],
+  "loss": "0.5 weighted cross entropy + 0.5 foreground soft Dice",
+  "learning_rate": 0.0002,
+  "weight_decay": 1e-05,
+  "optimizer": "AdamW",
+  "scheduler": "ReduceLROnPlateau",
+  "epochs_requested": 1,
+  "validation_samples_per_class": 1,
+  "window_low": -1000,
+  "window_high": 1000,
+  "seed": 42,
+  "device": "cuda",
+  "amp": true,
+  "smoke_test": true,
+  "train_patients": 4,
+  "validation_patients": 2,
+  "locked_test_patients": 26,
+  "validation_method": "Same deterministic class-centred patch validation procedure as V6. Validation Dice is patch-level, not full-volume.",
+  "hard_negative_method": "Intensity-stratified ground-truth background sampling. Not model-mined or out-of-fold.",
+  "stored_intensity_calibration_verified": false,
+  "test_partition_loaded": false,
+  "initialization": "Fresh random initialization",
+  "v6_1_checkpoint_loaded": false
+}

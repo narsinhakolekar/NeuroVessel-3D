@@ -1,0 +1,10 @@
+{
+  "total_cases": 254,
+  "pass": 254,
+  "warning": 0,
+  "fail": 0,
+  "total_pa_voxels": 56327386,
+  "total_pa_voxels_outside_ct_fov": 0,
+  "cases_with_pa_voxels_near_ct_edge": 0,
+  "csv_report": "outputs\\metrics\\airrc_geometry_audit.csv"
+}

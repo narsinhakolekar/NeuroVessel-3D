@@ -1,0 +1,739 @@
+NEUROVESSEL — PH METADATA AUDIT REPORT
+============================================================
+Project root: C:\Users\narsi\Desktop\Coding\NeuroVessel
+Metadata-like files discovered: 220
+Files containing possible clinical/PH terms: 188
+
+CANDIDATE FILES
+------------------------------------------------------------
+
+data\processed_v5\train\PA000016\geometry.json
+  L2: "patient_id": "PA000016",
+
+data\processed_v5\train\PA000024\geometry.json
+  L2: "patient_id": "PA000024",
+
+data\processed_v5\train\PA000036\geometry.json
+  L2: "patient_id": "PA000036",
+
+data\processed_v5\train\PA000038\geometry.json
+  L2: "patient_id": "PA000038",
+
+data\processed_v5\train\PA000042\geometry.json
+  L2: "patient_id": "PA000042",
+
+data\processed_v5\train\PA000046\geometry.json
+  L2: "patient_id": "PA000046",
+
+data\processed_v5\train\PA000047\geometry.json
+  L2: "patient_id": "PA000047",
+
+data\processed_v5\train\PA000053\geometry.json
+  L2: "patient_id": "PA000053",
+
+data\processed_v5\train\PA000060\geometry.json
+  L2: "patient_id": "PA000060",
+
+data\processed_v5\train\PA000073\geometry.json
+  L2: "patient_id": "PA000073",
+
+data\processed_v5\train\PA000074\geometry.json
+  L2: "patient_id": "PA000074",
+
+data\processed_v5\train\PA000080\geometry.json
+  L2: "patient_id": "PA000080",
+
+data\processed_v5\train\PA000082\geometry.json
+  L2: "patient_id": "PA000082",
+
+data\processed_v5\train\PA000090\geometry.json
+  L2: "patient_id": "PA000090",
+
+data\processed_v5\train\PA000091\geometry.json
+  L2: "patient_id": "PA000091",
+
+data\processed_v5\train\PA000092\geometry.json
+  L2: "patient_id": "PA000092",
+
+data\processed_v5\train\PA000096\geometry.json
+  L2: "patient_id": "PA000096",
+
+data\processed_v5\train\PA000099\geometry.json
+  L2: "patient_id": "PA000099",
+
+data\processed_v5\train\PA000106\geometry.json
+  L2: "patient_id": "PA000106",
+
+data\processed_v5\train\PA000116\geometry.json
+  L2: "patient_id": "PA000116",
+
+data\processed_v5\train\PA000120\geometry.json
+  L2: "patient_id": "PA000120",
+
+data\processed_v5\train\PA000121\geometry.json
+  L2: "patient_id": "PA000121",
+
+data\processed_v5\train\PA000124\geometry.json
+  L2: "patient_id": "PA000124",
+
+data\processed_v5\train\PA000127\geometry.json
+  L2: "patient_id": "PA000127",
+
+data\processed_v5\train\PA000128\geometry.json
+  L2: "patient_id": "PA000128",
+
+data\processed_v5\train\PA000132\geometry.json
+  L2: "patient_id": "PA000132",
+
+data\processed_v5\train\PA000133\geometry.json
+  L2: "patient_id": "PA000133",
+
+data\processed_v5\train\PA000137\geometry.json
+  L2: "patient_id": "PA000137",
+
+data\processed_v5\train\PA000138\geometry.json
+  L2: "patient_id": "PA000138",
+
+data\processed_v5\train\PA000144\geometry.json
+  L2: "patient_id": "PA000144",
+
+data\processed_v5\train\PA000147\geometry.json
+  L2: "patient_id": "PA000147",
+
+data\processed_v5\train\PA000148\geometry.json
+  L2: "patient_id": "PA000148",
+
+data\processed_v5\train\PA000150\geometry.json
+  L2: "patient_id": "PA000150",
+
+data\processed_v5\train\PA000157\geometry.json
+  L2: "patient_id": "PA000157",
+
+data\processed_v5\train\PA000162\geometry.json
+  L2: "patient_id": "PA000162",
+
+data\processed_v5\train\PA000168\geometry.json
+  L2: "patient_id": "PA000168",
+
+data\processed_v5\train\PA000169\geometry.json
+  L2: "patient_id": "PA000169",
+
+data\processed_v5\train\PA000174\geometry.json
+  L2: "patient_id": "PA000174",
+
+data\processed_v5\train\PA000183\geometry.json
+  L2: "patient_id": "PA000183",
+
+data\processed_v5\train\PA000190\geometry.json
+  L2: "patient_id": "PA000190",
+
+data\processed_v5\train\PA000198\geometry.json
+  L2: "patient_id": "PA000198",
+
+data\processed_v5\train\PA000201\geometry.json
+  L2: "patient_id": "PA000201",
+
+data\processed_v5\train\PA000203\geometry.json
+  L2: "patient_id": "PA000203",
+
+data\processed_v5\train\PA000207\geometry.json
+  L2: "patient_id": "PA000207",
+
+data\processed_v5\train\PA000209\geometry.json
+  L2: "patient_id": "PA000209",
+
+data\processed_v5\train\PA000212\geometry.json
+  L2: "patient_id": "PA000212",
+
+data\processed_v5\train\PA000217\geometry.json
+  L2: "patient_id": "PA000217",
+
+data\processed_v5\train\PA000223\geometry.json
+  L2: "patient_id": "PA000223",
+
+data\processed_v5\train\PA000229\geometry.json
+  L2: "patient_id": "PA000229",
+
+data\processed_v5\train\PA000233\geometry.json
+  L2: "patient_id": "PA000233",
+
+data\processed_v5\train\PA000234\geometry.json
+  L2: "patient_id": "PA000234",
+
+data\processed_v5\train\PA000235\geometry.json
+  L2: "patient_id": "PA000235",
+
+data\processed_v5\train\PA000237\geometry.json
+  L2: "patient_id": "PA000237",
+
+data\processed_v5\train\PA000239\geometry.json
+  L2: "patient_id": "PA000239",
+
+data\processed_v5\train\PA000242\geometry.json
+  L2: "patient_id": "PA000242",
+
+data\processed_v5\train\PA000245\geometry.json
+  L2: "patient_id": "PA000245",
+
+data\processed_v5\train\PA000255\geometry.json
+  L2: "patient_id": "PA000255",
+
+data\processed_v5\train\PA000263\geometry.json
+  L2: "patient_id": "PA000263",
+
+data\processed_v5\train\PA000273\geometry.json
+  L2: "patient_id": "PA000273",
+
+data\processed_v5\train\PA000282\geometry.json
+  L2: "patient_id": "PA000282",
+
+data\processed_v5\train\PA000285\geometry.json
+  L2: "patient_id": "PA000285",
+
+data\processed_v5\train\PA000286\geometry.json
+  L2: "patient_id": "PA000286",
+
+data\processed_v5\train\PA000296\geometry.json
+  L2: "patient_id": "PA000296",
+
+data\processed_v5\train\PA000298\geometry.json
+  L2: "patient_id": "PA000298",
+
+data\processed_v5\train\PA000302\geometry.json
+  L2: "patient_id": "PA000302",
+
+data\processed_v5\train\PA000303\geometry.json
+  L2: "patient_id": "PA000303",
+
+data\processed_v5\train\PA000305\geometry.json
+  L2: "patient_id": "PA000305",
+
+data\processed_v5\train\PA000313\geometry.json
+  L2: "patient_id": "PA000313",
+
+data\processed_v5\train\PA000315\geometry.json
+  L2: "patient_id": "PA000315",
+
+data\processed_v5\train\PA000317\geometry.json
+  L2: "patient_id": "PA000317",
+
+data\processed_v5\validation\PA000005\geometry.json
+  L2: "patient_id": "PA000005",
+
+data\processed_v5\validation\PA000100\geometry.json
+  L2: "patient_id": "PA000100",
+
+data\processed_v5\validation\PA000107\geometry.json
+  L2: "patient_id": "PA000107",
+
+data\processed_v5\validation\PA000115\geometry.json
+  L2: "patient_id": "PA000115",
+
+data\processed_v5\validation\PA000194\geometry.json
+  L2: "patient_id": "PA000194",
+
+data\processed_v5\validation\PA000202\geometry.json
+  L2: "patient_id": "PA000202",
+
+data\processed_v5\validation\PA000226\geometry.json
+  L2: "patient_id": "PA000226",
+
+data\processed_v5\validation\PA000238\geometry.json
+  L2: "patient_id": "PA000238",
+
+data\processed_v5\validation\PA000261\geometry.json
+  L2: "patient_id": "PA000261",
+
+data\processed_v5\validation\PA000292\geometry.json
+  L2: "patient_id": "PA000292",
+
+data\processed_v5\validation\PA000300\geometry.json
+  L2: "patient_id": "PA000300",
+
+data\processed_v5\validation\PA000301\geometry.json
+  L2: "patient_id": "PA000301",
+
+data\processed_v5\validation\PA000307\geometry.json
+  L2: "patient_id": "PA000307",
+
+data\processed_v5\validation\PA000310\geometry.json
+  L2: "patient_id": "PA000310",
+
+data\processed_v5\validation\PA000314\geometry.json
+  L2: "patient_id": "PA000314",
+
+data\splits.json
+  L9: "note": "Internal patient-level split. Not necessarily the official benchmark split.",
+
+outputs\archive\airrc_v6_1_full_30epochs\airrc_v6_1_multiclass_config.json
+  L16: "patches_per_patient": 3,
+  L39: "smoke_test": false,
+
+outputs\archive\airrc_v6_full_30epochs\airrc_v6_multiclass_config.json
+  L17: "patches_per_patient": 2,
+  L18: "training_sampling": "One PA-centred patch and one PV-centred patch per patient per epoch.",
+  L36: "smoke_test": false,
+  L37: "validation_method": "Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.",
+
+outputs\archive\airrc_v6_preflight_1epoch\airrc_v6_multiclass_config.json
+  L17: "patches_per_patient": 2,
+  L18: "training_sampling": "One PA-centred patch and one PV-centred patch per patient per epoch.",
+  L36: "smoke_test": false,
+  L37: "validation_method": "Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.",
+
+outputs\frangi_features\metadata.json
+  L9: "storage_dtype": "float16",
+  L10: "processed_patients": [
+  L96: "skipped_patients": [
+  L99: "failed_patients": [],
+  L100: "test_patients_processed": false
+
+outputs\metrics\airrc_download_manifest.csv
+  Headers: series_instance_uid, patient_id, luna_subset, contrast_status, mhd_path, raw_path, expected_raw_bytes, actual_raw_bytes, status, error
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_download_preflight.csv
+  Headers: series_instance_uid, patient_id, luna_subset, contrast_status, http_status, raw_bytes
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_geometry_audit.csv
+  Headers: series_instance_uid, patient_id, luna_subset, contrast_status, annotation_path, mhd_path, raw_path, status, issues, expected_raw_bytes, actual_raw_bytes, ct_size_xyz, ct_spacing_xyz_mm, ct_origin_lps_mm, ct_direction, mask_size_xyz, mask_spacing_xyz_mm, mask_origin_lps_mm, mask_direction, ct_bounds_min_lps_mm, ct_bounds_max_lps_mm, mask_bounds_min_lps_mm, mask_bounds_max_lps_mm, label_values, pa_voxels, airway_lumen_voxels, airway_wall_voxels, pulmonary_vein_voxels, pa_outside_ct_center_domain, pa_outside_ct_fov, pa_ct_index_min_xyz, pa_ct_index_max_xyz
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_intensity_audit.csv
+  Headers: index, patient_id, series_instance_uid, contrast_status, luna_subset, mhd_path, status, size_x, size_y, size_z, spacing_x_mm, spacing_y_mm, spacing_z_mm, origin_lps_x, origin_lps_y, origin_lps_z, pixel_type, voxel_count, sample_count, min_exact, max_exact, sample_mean, sample_std, sample_p0_5, sample_p1, sample_p5, sample_p25, sample_p50, sample_p75, sample_p95, sample_p99, sample_p99_5, pct_le_-1000, pct_le_-900, pct_le_-700, pct_ge_0, pct_ge_300, pct_ge_500, pct_ge_1000, pct_ge_2000, pct_ge_3000, pct_outside_int16_ct_range
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_pa_core_intensity.csv
+  Headers: patient_id, series_instance_uid, luna_subset, contrast_status, pa_voxels, core_voxels_after_1voxel_erosion, core_fraction_of_pa, ct_size_xyz, mask_size_xyz, ct_spacing_xyz, mask_spacing_xyz, pa_all_n, pa_all_p1, pa_all_p5, pa_all_p50, pa_all_p95, pa_all_p99, pa_all_mean, pa_all_min, pa_all_max, pa_all_frac_below_-500, pa_all_frac_above_-500, pa_all_frac_below_-200, pa_all_frac_above_-200, pa_all_frac_below_0, pa_all_frac_above_0, pa_all_frac_below_100, pa_all_frac_above_100, pa_all_frac_below_300, pa_all_frac_above_300, pa_all_frac_below_500, pa_all_frac_above_500, pa_all_frac_below_700, pa_all_frac_above_700, pa_all_frac_below_1000, pa_all_frac_above_1000, pa_core_n, pa_core_p1, pa_core_p5, pa_core_p50, pa_core_p95, pa_core_p99, pa_core_mean, pa_core_min, pa_core_max, pa_core_frac_below_-500, pa_core_frac_above_-500, pa_core_frac_below_-200, pa_core_frac_above_-200, pa_core_frac_below_0, pa_core_frac_above_0, pa_core_frac_below_100, pa_core_frac_above_100, pa_core_frac_below_300, pa_core_frac_above_300, pa_core_frac_below_500, pa_core_frac_above_500, pa_core_frac_below_700, pa_core_frac_above_700, pa_core_frac_below_1000, pa_core_frac_above_1000, pa_shell_n, pa_shell_p1, pa_shell_p5, pa_shell_p50, pa_shell_p95, pa_shell_p99, pa_shell_mean, pa_shell_min, pa_shell_max, pa_shell_frac_below_-500, pa_shell_frac_above_-500, pa_shell_frac_below_-200, pa_shell_frac_above_-200, pa_shell_frac_below_0, pa_shell_frac_above_0, pa_shell_frac_below_100, pa_shell_frac_above_100, pa_shell_frac_below_300, pa_shell_frac_above_300, pa_shell_frac_below_500, pa_shell_frac_above_500, pa_shell_frac_below_700, pa_shell_frac_above_700, pa_shell_frac_below_1000, pa_shell_frac_above_1000
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_pa_core_intensity_summary.json
+  L6: "intensity_note": "Values are reported as read from the LUNA16 MetaImage data after linear resampling; HU calibration has not been independently verified by this script.",
+
+outputs\metrics\airrc_pa_intensity_audit.csv
+  Headers: series_instance_uid, patient_id, contrast_status, luna_subset, pa_voxels, pa_min, pa_max, pa_mean, pa_std, pa_p0_1, pa_p1, pa_p5, pa_p25, pa_p50, pa_p75, pa_p95, pa_p99, pa_p99_5, pa_p99_9, frac_pa_below_minus1000, frac_pa_above_-1000, frac_pa_below_minus500, frac_pa_above_-500, frac_pa_below_0, frac_pa_above_0, frac_pa_below_100, frac_pa_above_100, frac_pa_below_300, frac_pa_above_300, frac_pa_below_500, frac_pa_above_500, frac_pa_below_700, frac_pa_above_700, frac_pa_below_1000, frac_pa_above_1000, frac_pa_below_1500, frac_pa_above_1500, frac_pa_below_2000, frac_pa_above_2000, frac_pa_below_3000, frac_pa_above_3000, count_pa_below_1000, count_pa_above_500, count_pa_above_700, count_pa_above_1000, count_pa_above_1500, resampled_ct_matches_mask_grid
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_uid_manifest.csv
+  Headers: series_instance_uid, patient_id, contrast_status, manufacturer, scanner_model, slice_thickness, original_pixel_spacing, annotation_path, mask_shape, mask_spacing_mm, mask_orientation
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_uid_manifest_with_luna_subset.csv
+  Headers: series_instance_uid, patient_id, contrast_status, manufacturer, scanner_model, slice_thickness, original_pixel_spacing, annotation_path, mask_shape, mask_spacing_mm, mask_orientation, luna_subset
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5_dataset_integrity.csv
+  Headers: series_instance_uid, patient_id, split, contrast_status, preprocess_status, image_exists, mask_exists, size_xyz, spacing_xyz_mm, image_min, image_max, pa_voxels, pa_fraction, mask_labels, status, issues
+  Clinical-looking headers: patient_id, image_exists, image_min, image_max
+
+outputs\metrics\airrc_v5_dataset_integrity_summary.json
+  L14: "patient_leakage": false,
+
+outputs\metrics\airrc_v5_preprocess_manifest.csv
+  Headers: series_instance_uid, patient_id, contrast_status, split, status, image_path, mask_path, size_xyz, spacing_xyz_mm, pa_voxels, pa_fraction, image_min, image_max, error
+  Clinical-looking headers: patient_id, image_path, image_min, image_max
+
+outputs\metrics\airrc_v5_preprocess_summary.json
+  L14: "output_images": "data\\processed_airrc_v5\\images",
+  L19: "intensity_scale_note": "Values are stored as read from LUNA16 MetaImage data; independent HU calibration verification remains outstanding.",
+
+outputs\metrics\airrc_v5_smoke_config.json
+  L15: "smoke_test": true,
+  L16: "validation_method": "Two deterministic patches per validation patient; not full-volume Dice."
+
+outputs\metrics\airrc_v5_splits.csv
+  Headers: series_instance_uid, patient_id, contrast_status, luna_subset, split
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_3d_audit\aggregate_3d_error_summary.json
+  L6: "patients_evaluated": 26,
+
+outputs\metrics\airrc_v5b_3d_audit\per_patient_3d_error_audit.csv
+  Headers: uid, patient_id, threshold, geometry_matches, shape_z, shape_y, shape_x, spacing_x_mm, spacing_y_mm, spacing_z_mm, voxel_volume_ml, dice, precision, recall, specificity, true_positive_voxels, false_positive_voxels, false_negative_voxels, true_negative_voxels, predicted_voxels, ground_truth_voxels, fp_fraction_of_prediction, fn_fraction_of_ground_truth, prediction_to_ground_truth_ratio, predicted_volume_ml, ground_truth_volume_ml, false_positive_volume_ml, false_negative_volume_ml, pred_26_component_count, pred_26_largest_component_voxels, pred_26_largest_component_fraction, pred_26_median_component_voxels, pred_26_mean_component_voxels, pred_26_components_ge_10, pred_26_components_ge_100, pred_26_small_components_lt_10, pred_26_small_component_voxel_fraction, pred_26_top_5_component_sizes, pred_26_components_intersecting_reference, pred_26_components_not_intersecting_reference, gt_26_component_count, gt_26_largest_component_voxels, gt_26_largest_component_fraction, gt_26_median_component_voxels, gt_26_mean_component_voxels, gt_26_components_ge_10, gt_26_components_ge_100, gt_26_small_components_lt_10, gt_26_small_component_voxel_fraction, gt_26_top_5_component_sizes, gt_26_components_intersecting_reference, gt_26_components_not_intersecting_reference, pred_6_component_count, pred_6_largest_component_voxels, pred_6_largest_component_fraction, pred_6_median_component_voxels, pred_6_mean_component_voxels, pred_6_components_ge_10, pred_6_components_ge_100, pred_6_small_components_lt_10, pred_6_small_component_voxel_fraction, pred_6_top_5_component_sizes, pred_6_components_intersecting_reference, pred_6_components_not_intersecting_reference, gt_6_component_count, gt_6_largest_component_voxels, gt_6_largest_component_fraction, gt_6_median_component_voxels, gt_6_mean_component_voxels, gt_6_components_ge_10, gt_6_components_ge_100, gt_6_small_components_lt_10, gt_6_small_component_voxel_fraction, gt_6_top_5_component_sizes, gt_6_components_intersecting_reference, gt_6_components_not_intersecting_reference, fp_26_component_count, fp_26_largest_component_voxels, fp_26_largest_component_fraction, fp_26_median_component_voxels, fp_26_mean_component_voxels, fp_26_components_ge_10, fp_26_components_ge_100, fp_26_small_components_lt_10, fp_26_small_component_voxel_fraction, fp_26_top_5_component_sizes, fp_26_components_intersecting_reference, fp_26_components_not_intersecting_reference, fn_26_component_count, fn_26_largest_component_voxels, fn_26_largest_component_fraction, fn_26_median_component_voxels, fn_26_mean_component_voxels, fn_26_components_ge_10, fn_26_components_ge_100, fn_26_small_components_lt_10, fn_26_small_component_voxel_fraction, fn_26_top_5_component_sizes, fn_26_components_intersecting_reference, fn_26_components_not_intersecting_reference
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_component_ablation\component_ablation_metadata.json
+  L7: "validation_patients": 26,
+  L8: "locked_test_patients": 26,
+
+outputs\metrics\airrc_v5b_component_ablation\component_ablation_summary.csv
+  Headers: minimum_component_volume_mm3, patients, macro_dice, dice_std, macro_precision, macro_recall, micro_dice, micro_precision, micro_recall, total_tp, total_fp, total_fn, mean_remaining_components, mean_removed_components, mean_removed_prediction_fraction
+  Clinical-looking headers: patients
+
+outputs\metrics\airrc_v5b_fullvol\evaluation_summary.json
+  L14: "validation_patients": 26,
+  L15: "locked_test_patients": 26,
+  L33: "metric_definition": "Full-volume metrics calculated over all voxels of each validation patient. Macro metrics are the unweighted average over patients. Micro metrics pool voxel counts across patients.",
+
+outputs\metrics\airrc_v5b_fullvol\per_patient_metrics.csv
+  Headers: uid, patient_id, threshold, dice, precision, recall, specificity, intersection, predicted_voxels, target_voxels, true_negative, false_positive, false_negative
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_fullvol\threshold_summary.csv
+  Headers: threshold, patients, macro_dice, dice_std, median_dice, macro_precision, macro_recall, macro_specificity, micro_dice, micro_precision, micro_recall, micro_specificity, total_intersection, total_predicted_voxels, total_target_voxels, total_false_positive, total_false_negative
+  Clinical-looking headers: patients
+
+outputs\metrics\airrc_v5b_pa_pv_annotation_audit\pa_pv_annotation_verification.csv
+  Headers: uid, patient_id, annotation_path, annotation_shape_zyx, class_values, class_distribution_json, pa_voxels_original_class3, pv_voxels_original_class4, processed_pa_voxels, pa_pv_overlap_voxels, pa_mismatch_voxels, exact_pa_match, annotation_ct_geometry_match, annotation_processed_pa_geometry_match, verified
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_pa_pv_annotation_audit\pa_pv_annotation_verification_summary.json
+  L4: "validation_patients_expected": 26,
+  L5: "validation_patients_audited": 26,
+  L6: "locked_test_patients": 26,
+  L10: "verified_patients": 26,
+  L11: "patients_with_errors": 0,
+
+outputs\metrics\airrc_v5b_pa_pv_confusion\pa_pv_confusion_summary.json
+  L6: "patients_evaluated": 26,
+  L87: "All comparisons use original AirRC class labels and verified matching image geometry."
+
+outputs\metrics\airrc_v5b_pa_pv_confusion\per_patient_class_confusion.csv
+  Headers: uid, patient_id, actual_class_id, actual_class_name, total_class_voxels, predicted_as_pa_voxels, fraction_of_class_predicted_as_pa
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_pa_pv_confusion\per_patient_pa_pv_confusion.csv
+  Headers: uid, patient_id, threshold, geometry_annotation_ct, geometry_annotation_processed_pa, geometry_annotation_prediction, original_pa_exact_match, pa_mismatch_voxels, total_voxels, predicted_pa_voxels, gt_pa_voxels, gt_pv_voxels, gt_airway_lumen_voxels, gt_airway_wall_voxels, gt_background_voxels, true_positive_pa_voxels, false_negative_pa_voxels, false_positive_total_voxels, predicted_pa_on_background, predicted_pa_on_airway_lumen, predicted_pa_on_airway_wall, predicted_pa_on_pv, pv_overlap_fraction_of_false_positives, pv_overlap_fraction_of_all_predictions, pv_voxel_prediction_rate, background_share_of_false_positives, airway_lumen_share_of_false_positives, airway_wall_share_of_false_positives, pv_share_of_false_positives, dice, precision, recall, specificity
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v5b_preflight_config.json
+  L24: "smoke_test": false,
+  L25: "validation_method": "Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.",
+
+outputs\metrics\airrc_v5b_smoke_config.json
+  L24: "smoke_test": true,
+  L25: "validation_method": "Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.",
+
+outputs\metrics\airrc_v5b_wm1000_wp1000_config.json
+  L24: "smoke_test": false,
+  L25: "validation_method": "Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.",
+
+outputs\metrics\airrc_v6_1_confidence_analysis\confidence_calibration_bins.csv
+  Headers: patient_id, class, group, bin, bin_lower, bin_upper, count, mean_confidence, mean_accuracy, absolute_calibration_gap
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_confidence_analysis\confidence_group_summary.csv
+  Headers: patient_id, class, group, total_voxels, sampled_voxels, prediction_agreement_with_saved, accuracy_vs_ground_truth, mean_predicted_confidence, median_predicted_confidence, fraction_confidence_ge_0_80, fraction_confidence_ge_0_90, mean_target_class_probability, median_target_class_probability, mean_gt_class_probability, mean_p_background, mean_p_pa, mean_p_pv, mean_entropy_normalized, median_entropy_normalized, mean_top1_top2_margin, multiclass_brier_score, mean_negative_log_likelihood, expected_calibration_error
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_confidence_analysis\confidence_inference_checks.csv
+  Headers: patient_id, checkpoint, checkpoint_epoch, roi_size, overlap, blend_mode, argmax_agreement, status
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_confidence_analysis\confidence_matched_pairs.csv
+  Headers: patient_id, class, error_group, control_group, match_distance, distance_units, error_i, error_j, error_k, control_i, control_j, control_k, error_world_x, error_world_y, error_world_z, control_world_x, control_world_y, control_world_z, error_stored_intensity, control_stored_intensity, delta_stored_intensity, error_model_clipped_intensity, control_model_clipped_intensity, delta_model_clipped_intensity, error_model_normalized_intensity, control_model_normalized_intensity, delta_model_normalized_intensity, error_local_mean_3, control_local_mean_3, delta_local_mean_3, error_local_std_3, control_local_std_3, delta_local_std_3, error_local_mean_7, control_local_mean_7, delta_local_mean_7, error_local_std_7, control_local_std_7, delta_local_std_7, error_gradient_magnitude, control_gradient_magnitude, delta_gradient_magnitude, error_p_background, control_p_background, error_p_pa, control_p_pa, error_p_pv, control_p_pv, error_predicted_class, control_predicted_class, error_ground_truth_class, control_ground_truth_class, error_max_probability, control_max_probability, error_target_probability, control_target_probability, delta_target_probability, delta_max_probability, error_entropy, control_entropy, delta_entropy, error_correct, control_correct, error_saved_prediction_agreement, control_saved_prediction_agreement
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_confidence_analysis\confidence_matched_summary.csv
+  Headers: patient_id, class, error_group, control_group, matched_pairs, error_target_probability_median, control_target_probability_median, median_target_probability_difference, error_max_confidence_median, control_max_confidence_median, error_entropy_median, control_entropy_median, error_prediction_accuracy, control_prediction_accuracy, error_prediction_agreement, control_prediction_agreement
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_error_analysis\component_localization.csv
+  Headers: patient_id, uid, class, error_type, component_id, component_voxels, error_voxels, centroid_i, centroid_j, centroid_k, world_x_mm_RAS, world_y_mm_RAS, world_z_mm_RAS, bbox_i_min, bbox_i_max, bbox_j_min, bbox_j_max, bbox_k_min, bbox_k_max, background_error_voxels, other_vessel_error_voxels
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_error_analysis\component_summary.csv
+  Headers: patient_id, class, gt_voxels, pred_voxels, true_positive_voxels, false_positive_voxels, false_negative_voxels, fp_from_background, fp_from_other_vessel, precision, recall, dice, predicted_components, completely_false_components, completely_false_component_voxels, ground_truth_components, completely_missed_components, completely_missed_component_voxels
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_error_analysis\largest_false_positive_components.csv
+  Headers: patient_id, class, component_id, component_voxels, correct_class_overlap_voxels, error_voxels, error_fraction, component_volume_mm3
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_error_analysis\largest_missed_components.csv
+  Headers: patient_id, class, component_id, component_voxels, correct_class_overlap_voxels, error_voxels, error_fraction, component_volume_mm3
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_final_test\airrc_v6_1_final_test_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_final_test\airrc_v6_1_final_test_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "test_patients_in_split": 26,
+  L34: "test_patients_evaluated": 26,
+  L44: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_1_fullvol\airrc_v6_1_fullvol_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_fullvol\airrc_v6_1_fullvol_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "validation_patients_evaluated": 26,
+  L34: "locked_test_patients": 26,
+  L37: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_1_fullvol_limit2\airrc_v6_1_fullvol_limit2_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_fullvol_limit2\airrc_v6_1_fullvol_limit2_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "validation_patients_evaluated": 2,
+  L34: "locked_test_patients": 26,
+  L37: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_1_intensity_analysis\ct_intensity_summary.csv
+  Headers: patient_id, class, group, total_voxels, sampled_voxels, mean, std, min, p05, p25, median, p75, p95, max, fraction_below_minus_500
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_multiclass\airrc_v6_1_multiclass_config.json
+  L16: "patches_per_patient": 3,
+  L39: "smoke_test": false,
+
+outputs\metrics\airrc_v6_1_multiclass\airrc_v6_1_multiclass_smoke_config.json
+  L16: "patches_per_patient": 3,
+  L39: "smoke_test": true,
+
+outputs\metrics\airrc_v6_1_spatial_hard_negative\spatial_feature_groups.csv
+  Headers: patient_id, class, group, total_voxels, sampled_voxels, distance_units, distance_to_gt_target_median, distance_to_gt_target_p95, stored_intensity_mean, stored_intensity_median, stored_intensity_std, stored_intensity_p05, stored_intensity_p95, model_clipped_intensity_mean, model_clipped_intensity_median, model_clipped_intensity_std, model_clipped_intensity_p05, model_clipped_intensity_p95, model_normalized_intensity_mean, model_normalized_intensity_median, model_normalized_intensity_std, model_normalized_intensity_p05, model_normalized_intensity_p95, local_mean_3_mean, local_mean_3_median, local_mean_3_std, local_mean_3_p05, local_mean_3_p95, local_std_3_mean, local_std_3_median, local_std_3_std, local_std_3_p05, local_std_3_p95, local_mean_7_mean, local_mean_7_median, local_mean_7_std, local_mean_7_p05, local_mean_7_p95, local_std_7_mean, local_std_7_median, local_std_7_std, local_std_7_p05, local_std_7_p95, gradient_magnitude_mean, gradient_magnitude_median, gradient_magnitude_std, gradient_magnitude_p05, gradient_magnitude_p95, fraction_clipped_low, fraction_clipped_high
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_spatial_hard_negative\spatial_matched_pairs.csv
+  Headers: patient_id, class, error_group, control_group, match_distance, distance_units, error_i, error_j, error_k, control_i, control_j, control_k, error_world_x, error_world_y, error_world_z, control_world_x, control_world_y, control_world_z, error_stored_intensity, control_stored_intensity, delta_stored_intensity, error_model_clipped_intensity, control_model_clipped_intensity, delta_model_clipped_intensity, error_model_normalized_intensity, control_model_normalized_intensity, delta_model_normalized_intensity, error_local_mean_3, control_local_mean_3, delta_local_mean_3, error_local_std_3, control_local_std_3, delta_local_std_3, error_local_mean_7, control_local_mean_7, delta_local_mean_7, error_local_std_7, control_local_std_7, delta_local_std_7, error_gradient_magnitude, control_gradient_magnitude, delta_gradient_magnitude
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_1_spatial_hard_negative\spatial_matching_summary.csv
+  Headers: patient_id, class, error_group, control_group, error_samples, available_controls, matched_pairs, match_rate, median_match_distance, p95_match_distance, distance_units, stored_intensity_delta_mean, stored_intensity_delta_median, model_clipped_intensity_delta_mean, model_clipped_intensity_delta_median, model_normalized_intensity_delta_mean, model_normalized_intensity_delta_median, local_mean_3_delta_mean, local_mean_3_delta_median, local_std_3_delta_mean, local_std_3_delta_median, local_mean_7_delta_mean, local_mean_7_delta_median, local_std_7_delta_mean, local_std_7_delta_median, gradient_magnitude_delta_mean, gradient_magnitude_delta_median
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_2_candidate_audit\training_hard_negative_candidates.csv
+  Headers: patient_id, uid, volume_shape, total_voxels, background_voxels, background_fraction, background_intensity_median, background_centres_ct_gt_-500, eligible_fraction_of_background_gt_-500, background_centres_ct_gt_-300, eligible_fraction_of_background_gt_-300, background_centres_ct_gt_0, eligible_fraction_of_background_gt_0
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_2_candidate_audit\training_hard_negative_summary.json
+  L4: "training_patients": 202,
+  L5: "validation_patients": 26,
+  L6: "locked_test_patients": 26,
+  L7: "validation_images_loaded": false,
+  L8: "locked_test_images_loaded": false,
+
+outputs\metrics\airrc_v6_2_fullvol\airrc_v6_2_fullvol_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_2_fullvol\airrc_v6_2_fullvol_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "validation_patients_evaluated": 26,
+  L34: "locked_test_patients": 26,
+  L37: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_2_multiclass\airrc_v6_2_multiclass_config.json
+  L17: "patches_per_patient": 3,
+  L46: "smoke_test": false,
+  L47: "train_patients": 202,
+  L48: "validation_patients": 26,
+  L49: "locked_test_patients": 26,
+
+outputs\metrics\airrc_v6_2_multiclass\airrc_v6_2_multiclass_smoke_config.json
+  L17: "patches_per_patient": 3,
+  L46: "smoke_test": true,
+  L47: "train_patients": 4,
+  L48: "validation_patients": 2,
+  L49: "locked_test_patients": 26,
+
+outputs\metrics\airrc_v6_fullvol\airrc_v6_fullvol_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_fullvol\airrc_v6_fullvol_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "validation_patients_evaluated": 26,
+  L34: "locked_test_patients": 26,
+  L37: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_fullvol_limit2\airrc_v6_fullvol_limit2_per_patient.csv
+  Headers: uid, patient_id, volume_shape, pa_dice, pa_precision, pa_recall, pv_dice, pv_precision, pv_recall, mean_foreground_dice, gt_pa_voxels, pred_pa_voxels, gt_pv_voxels, pred_pv_voxels, pv_misclassified_as_pa, pa_misclassified_as_pv, pa_fp_from_pv_fraction, pv_fp_from_pa_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\airrc_v6_fullvol_limit2\airrc_v6_fullvol_limit2_summary.json
+  L31: "training_patients_in_split": 202,
+  L32: "validation_patients_in_split": 26,
+  L33: "validation_patients_evaluated": 2,
+  L34: "locked_test_patients": 26,
+  L37: "macro_patient_average": {
+
+outputs\metrics\airrc_v6_multiclass\airrc_v6_multiclass_config.json
+  L17: "patches_per_patient": 2,
+  L18: "training_sampling": "One PA-centred patch and one PV-centred patch per patient per epoch.",
+  L36: "smoke_test": false,
+  L37: "validation_method": "Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.",
+
+outputs\metrics\airrc_v6_multiclass\airrc_v6_multiclass_manifest.csv
+  Headers: uid, patient_id, split, original_annotation, image_path, original_pa_mask, multiclass_label_path, background_voxels, pa_voxels, pv_voxels, pa_mismatch_voxels, geometry_verified, saved_file_verified
+  Clinical-looking headers: patient_id, image_path
+
+outputs\metrics\airrc_v6_multiclass\airrc_v6_multiclass_smoke_config.json
+  L17: "patches_per_patient": 2,
+  L18: "training_sampling": "One PA-centred patch and one PV-centred patch per patient per epoch.",
+  L36: "smoke_test": true,
+  L37: "validation_method": "Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.",
+
+outputs\metrics\airrc_v6_multiclass\airrc_v6_multiclass_summary.json
+  L10: "training_patients_expected": 202,
+  L11: "training_patients_processed": 202,
+  L12: "validation_patients_expected": 26,
+  L13: "validation_patients_processed": 26,
+  L14: "locked_test_patients": 26,
+
+outputs\metrics\airrc_v6_test_label_preparation_summary.json
+  L14: "ct_images_read": 0,
+
+outputs\metrics\final_test_v4\FINAL_COMPLETE.json
+  L3: "patients_evaluated": 15,
+  L5: "patient_results_file": "outputs\\metrics\\final_test_v4\\final_test_patient_results.csv"
+
+outputs\metrics\final_test_v4\final_test_patient_results.csv
+  Headers: patient_id, probability_threshold, minimum_component_size, connectivity, original_components, remaining_components, dice, precision, recall, tp, fp, fn, predicted_voxels, target_voxels, predicted_fraction, target_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\final_test_v4\final_test_summary.json
+  L6: "test_patients_evaluated": 15,
+  L7: "test_patient_ids": [
+  L33: "macro_patient_metrics": {
+
+outputs\metrics\frangi_separability\frangi_separability_summary.json
+  L2: "validation_patients_analyzed": 15,
+  L3: "mean_patient_auc": 0.9826449705999999,
+  L9: "test_patients_evaluated": 0,
+
+outputs\metrics\frangi_separability\frangi_separability_validation.csv
+  Headers: patient_id, pa_mean, pa_median, pa_p95, background_mean, background_median, background_p95, surrounding_mean, surrounding_median, surrounding_p95, pa_background_mean_ratio, frangi_auc, pa_sample_count, background_sample_count, surrounding_sample_count
+  Clinical-looking headers: patient_id
+
+outputs\metrics\frangi_separability_v2\frangi_separability_v2_summary.json
+  L2: "validation_patients_analyzed": 15,
+  L3: "test_patients_evaluated": 0,
+
+outputs\metrics\frangi_separability_v2\frangi_separability_v2_validation.csv
+  Headers: patient_id, pa_mean, pa_median, pa_p95, background_mean, background_median, background_p95, ring_mean, ring_median, ring_p95, hard_background_mean, hard_background_median, hard_background_threshold, auc_pa_vs_random_background, auc_pa_vs_surrounding_ring, auc_pa_vs_hard_background, pa_samples, background_samples, ring_samples, hard_background_samples
+  Clinical-looking headers: patient_id
+
+outputs\metrics\interp_full_volume_summary.json
+  L4: "validation_patient_count": 15,
+  L8: "mean_patient_dice": 0.0556003176177671,
+  L9: "std_patient_dice": 0.0118161394970184,
+  L10: "median_patient_dice": 0.057948275113583025,
+  L11: "mean_patient_precision": 0.02920048254926444,
+
+outputs\metrics\interp_full_volume_validation.csv
+  Headers: patient_id, threshold, volume_shape, dice, precision, recall, predicted_voxels, ground_truth_voxels, predicted_foreground_fraction, ground_truth_foreground_fraction, inference_seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\interp_threshold_sweep.csv
+  Headers: patient_id, threshold, dice, precision, recall, predicted_voxels, ground_truth_voxels, predicted_foreground_fraction, ground_truth_foreground_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\interp_threshold_sweep_summary.json
+  L3: "validation_patient_count": 15,
+
+outputs\metrics\parse_dataset_audit.csv
+  Headers: case, image_path, label_path, status, shape, spacing_mm, orientation, foreground_voxels, foreground_fraction, label_values, message
+  Clinical-looking headers: image_path, message
+
+outputs\metrics\spacing_aware_frangi_validation.csv
+  Headers: patient_id, original_shape, original_spacing_mm, isotropic_shape, target_spacing_mm, threshold, dice, precision, recall, predicted_fraction, target_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\spacing_aware_frangi_validation_summary.json
+  L3: "validation_patients": [
+  L20: "threshold_tuning_patient": "PA000005",
+  L31: "warning": "Small validation subset; threshold tuned on a validation patient. Results are exploratory and are not held-out test performance. Frangi is not artery-specific."
+
+outputs\metrics\test_frangi_precomputation.json
+  L3: "test_patients": [
+  L34: "storage_dtype": "float16",
+  L55: "verified_complete_patients": [
+
+outputs\metrics\unet_v2_validation.csv
+  Headers: epoch, patient_id, dice, precision, recall, predicted_fraction, target_fraction, seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\unet_v3_frangi_threshold_sweep.csv
+  Headers: patient_id, threshold, dice, precision, recall, predicted_fraction, target_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\unet_v3_frangi_validation.csv
+  Headers: epoch, patient_id, dice, precision, recall, predicted_fraction, target_fraction, seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\unet_v4_hard_negative_threshold_patientwise.csv
+  Headers: patient_id, threshold, dice, precision, recall, predicted_fraction, target_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\unet_v4_hard_negative_threshold_summary.json
+  L5: "validation_patients": 15,
+  L6: "test_patients_evaluated": 0,
+
+outputs\metrics\unet_v4_hard_negative_threshold_sweep.csv
+  Headers: threshold, mean_dice, std_dice, mean_precision, mean_recall, mean_predicted_fraction, mean_target_fraction, patients
+  Clinical-looking headers: patients
+
+outputs\metrics\unet_v4_hard_negative_validation.csv
+  Headers: epoch, patient_id, dice, precision, recall, predicted_fraction, target_fraction, threshold, seconds
+  Clinical-looking headers: patient_id
+
+outputs\metrics\v2_postprocessing_summary.json
+  L4: "patients": 15,
+  L13: "patients": 15,
+  L22: "patients": 15,
+  L31: "patients": 15,
+  L40: "patients": 15,
+
+outputs\metrics\v2_postprocessing_validation.csv
+  Headers: patient_id, threshold, method, dice, precision, recall, predicted_fraction, target_fraction, predicted_voxels
+  Clinical-looking headers: patient_id
+
+outputs\metrics\v2_threshold_sweep.csv
+  Headers: patient_id, threshold, dice, precision, recall, predicted_fraction, target_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\v42_connected_components\v42_patient_results.csv
+  Headers: patient_id, probability_threshold, minimum_component_size, original_components, remaining_components, largest_component_voxels, dice, precision, recall, tp, fp, fn, predicted_voxels, target_voxels, predicted_fraction
+  Clinical-looking headers: patient_id
+
+outputs\metrics\v42_connected_components\v42_summary.csv
+  Headers: minimum_component_size, mean_dice, std_dice, mean_precision, mean_recall, mean_fp, mean_fn, mean_remaining_components, mean_predicted_fraction, patients
+  Clinical-looking headers: patients
+
+outputs\metrics\v42_connected_components\v42_summary.json
+  L6: "validation_patients": 15,
+  L7: "test_patients_evaluated": 0,
+  L36: "patients": 15
+  L48: "patients": 15
+  L60: "patients": 15
+
+outputs\metrics\v4_frangi_error_analysis\v4_frangi_error_results.csv
+  Headers: patient_id, threshold, dice, precision, recall, tp_voxels, fp_voxels, fn_voxels, tp_frangi_mean, tp_frangi_median, tp_frangi_p95, fp_frangi_mean, fp_frangi_median, fp_frangi_p95, fn_frangi_mean, fn_frangi_median, fn_frangi_p95, auc_tp_vs_fp, auc_tp_vs_fn
+  Clinical-looking headers: patient_id
+
+outputs\metrics\v4_frangi_error_analysis\v4_frangi_error_summary.json
+  L2: "patients_analyzed": 3,
+  L3: "patient_ids": [
+  L10: "test_patients_evaluated": 0,
+  L13: "patient_id": "PA000314",
+  L34: "patient_id": "PA000194",
+
+outputs\metrics\v5_preprocessing_summary.json
+  L7: "train_patients": 70,
+  L8: "validation_patients": 15,
+  L9: "test_patients_processed": false,
+
+outputs\reports\NeuroVessel_Experimental_Results.xlsx
+  Clinical-looking headers: Patients, Patients, patient_id
+  pulmonary_hypertension:
+    - Executive Summary!R21: • Pulmonary hypertension risk prediction has not yet been implemented. |  |  |  |  | 
+    - Methodology Notes!R13: Research scope | Current project has a 3D U-Net segmentation pipeline. Foundation-model integration and pulmonary hypertension risk prediction remain future work.
+
+INTERPRETATION
+- Keyword matches are not validated PH outcomes.
+- Check labels against an authoritative clinical reference (ideally RHC-confirmed diagnosis/hemodynamics).
+- No PH prediction model should be trained until this label audit is resolved.
+- This audit did not read CT/NIfTI volumes, masks, predictions, or checkpoints.

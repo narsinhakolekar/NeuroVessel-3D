@@ -1,0 +1,47 @@
+[
+  {
+    "method": "raw",
+    "patients": 15,
+    "mean_dice": 0.06683491552276037,
+    "median_dice": 0.0708592597771901,
+    "mean_precision": 0.03657502647131661,
+    "mean_recall": 0.39770541994111913,
+    "mean_predicted_fraction": 0.043821275676946464
+  },
+  {
+    "method": "largest_component",
+    "patients": 15,
+    "mean_dice": 0.0274965918452919,
+    "median_dice": 0.0,
+    "mean_precision": 0.02945562684453172,
+    "mean_recall": 0.02578188977233551,
+    "mean_predicted_fraction": 0.004098660586455896
+  },
+  {
+    "method": "min_size_10",
+    "patients": 15,
+    "mean_dice": 0.06689153078172182,
+    "median_dice": 0.07089823388182658,
+    "mean_precision": 0.03661337740239109,
+    "mean_recall": 0.3971909378090963,
+    "mean_predicted_fraction": 0.04371833714876965
+  },
+  {
+    "method": "min_size_100",
+    "patients": 15,
+    "mean_dice": 0.06755613420710528,
+    "median_dice": 0.07122628697662348,
+    "mean_precision": 0.037043130771335066,
+    "mean_recall": 0.3938553180886636,
+    "mean_predicted_fraction": 0.0428416190760784
+  },
+  {
+    "method": "min_size_500",
+    "patients": 15,
+    "mean_dice": 0.06818171892558818,
+    "median_dice": 0.07191268614814336,
+    "mean_precision": 0.03749987891657799,
+    "mean_recall": 0.3856382463806755,
+    "mean_predicted_fraction": 0.041418199792114016
+  }
+]

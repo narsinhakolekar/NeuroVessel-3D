@@ -1,0 +1,17 @@
+{
+  "project": "NeuroVessel",
+  "experiment": "Original PA/PV annotation verification",
+  "validation_patients_expected": 26,
+  "validation_patients_audited": 26,
+  "locked_test_patients": 26,
+  "test_partition_loaded": false,
+  "annotation_nifti_files": 254,
+  "annotation_png_previews": 254,
+  "verified_patients": 26,
+  "patients_with_errors": 0,
+  "total_original_pa_voxels": 6026095,
+  "total_original_pv_voxels": 5670579,
+  "all_patients_verified": true,
+  "errors": [],
+  "runtime_seconds": 26.295846700668335
+}

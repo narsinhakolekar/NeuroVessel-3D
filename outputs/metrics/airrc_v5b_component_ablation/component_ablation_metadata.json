@@ -1,0 +1,26 @@
+{
+  "project": "NeuroVessel",
+  "model": "V5B Residual 3D U-Net",
+  "experiment": "Connected-component size ablation",
+  "threshold": 0.7,
+  "connectivity": 26,
+  "validation_patients": 26,
+  "locked_test_patients": 26,
+  "test_partition_loaded": false,
+  "component_cutoffs_mm3": [
+    0,
+    10,
+    25,
+    50,
+    100,
+    250
+  ],
+  "original_prediction_modified": false,
+  "component_filtering_applied_to_saved_masks": false,
+  "baseline_macro_dice": 0.6735096799904604,
+  "best_validation_cutoff_mm3": 250.0,
+  "best_validation_macro_dice": 0.6825157116277324,
+  "best_validation_micro_dice": 0.6862532938450121,
+  "runtime_seconds": 34.62641978263855,
+  "warning": "Component filtering may remove genuine small pulmonary artery branches. Results are exploratory and require visual review."
+}

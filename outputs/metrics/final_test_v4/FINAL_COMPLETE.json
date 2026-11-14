@@ -1,0 +1,6 @@
+{
+    "status": "completed",
+    "patients_evaluated": 15,
+    "summary_file": "outputs\\metrics\\final_test_v4\\final_test_summary.json",
+    "patient_results_file": "outputs\\metrics\\final_test_v4\\final_test_patient_results.csv"
+}

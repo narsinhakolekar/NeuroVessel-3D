@@ -1,0 +1,65 @@
+[
+  {
+    "threshold": 0.2,
+    "mean_dice": 0.008059513826674981,
+    "median_dice": 0.008299020005272363,
+    "mean_precision": 0.004046655039715267,
+    "mean_recall": 1.0,
+    "mean_predicted_fraction": 0.9999929587730473,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.3,
+    "mean_dice": 0.009112809693005711,
+    "median_dice": 0.009294005818937095,
+    "mean_precision": 0.004578227541883933,
+    "mean_recall": 0.9921257350802907,
+    "mean_predicted_fraction": 0.8781244892767972,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.4,
+    "mean_dice": 0.030305405061713607,
+    "median_dice": 0.028777409056437487,
+    "mean_precision": 0.01543518989222688,
+    "mean_recall": 0.8540024500763107,
+    "mean_predicted_fraction": 0.22399574610299858,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.5,
+    "mean_dice": 0.045385748774106,
+    "median_dice": 0.04390536251469165,
+    "mean_precision": 0.02347557200222241,
+    "mean_recall": 0.7010343049527852,
+    "mean_predicted_fraction": 0.12065637160038806,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.6,
+    "mean_dice": 0.05718391666814019,
+    "median_dice": 0.057745975231732985,
+    "mean_precision": 0.030184219994912623,
+    "mean_recall": 0.557635909010323,
+    "mean_predicted_fraction": 0.07456347944411923,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.7,
+    "mean_dice": 0.06683491552276037,
+    "median_dice": 0.0708592597771901,
+    "mean_precision": 0.03657502647131661,
+    "mean_recall": 0.39770541994111913,
+    "mean_predicted_fraction": 0.043821275676946464,
+    "mean_target_fraction": 0.004046625617975406
+  },
+  {
+    "threshold": 0.8,
+    "mean_dice": 0.06415351876252967,
+    "median_dice": 0.06994552363506934,
+    "mean_precision": 0.03816923404488251,
+    "mean_recall": 0.2064716139996164,
+    "mean_predicted_fraction": 0.021622972705586916,
+    "mean_target_fraction": 0.004046625617975406
+  }
+]

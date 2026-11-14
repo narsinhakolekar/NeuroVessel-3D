@@ -1,0 +1,72 @@
+{
+  "checkpoint": "outputs\\checkpoints\\unet_interp_best.pt",
+  "validation_patient_count": 15,
+  "thresholds": [
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8
+  ],
+  "results": {
+    "0.2": {
+      "mean_dice": 0.025699424607230816,
+      "median_dice": 0.026392551564462133,
+      "mean_precision": 0.013037350087721711,
+      "mean_recall": 0.9213092661127769,
+      "mean_predicted_fraction": 0.28624901398169433,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.3": {
+      "mean_dice": 0.03541961345475688,
+      "median_dice": 0.03578191318866857,
+      "mean_precision": 0.018108529155355012,
+      "mean_recall": 0.8294161591646755,
+      "mean_predicted_fraction": 0.18543821990802054,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.4": {
+      "mean_dice": 0.043333668410302326,
+      "median_dice": 0.045092241578038685,
+      "mean_precision": 0.022353406213201053,
+      "mean_recall": 0.7267764721905021,
+      "mean_predicted_fraction": 0.1315677482402607,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.5": {
+      "mean_dice": 0.0556003176177671,
+      "median_dice": 0.057948275113583025,
+      "mean_precision": 0.02920048254926444,
+      "mean_recall": 0.597332195178693,
+      "mean_predicted_fraction": 0.08265142878892263,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.6": {
+      "mean_dice": 0.06409836788926236,
+      "median_dice": 0.06551373065353057,
+      "mean_precision": 0.03470001383199301,
+      "mean_recall": 0.43369054653342476,
+      "mean_predicted_fraction": 0.05045177857965996,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.7": {
+      "mean_dice": 0.06052636974901641,
+      "median_dice": 0.058060732153690765,
+      "mean_precision": 0.03492394512345714,
+      "mean_recall": 0.23575244484029154,
+      "mean_predicted_fraction": 0.02724223528014139,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    },
+    "0.8": {
+      "mean_dice": 0.04901024853292943,
+      "median_dice": 0.04823303653256432,
+      "mean_precision": 0.03312593045778048,
+      "mean_recall": 0.09821888126122016,
+      "mean_predicted_fraction": 0.012003450964073644,
+      "mean_ground_truth_fraction": 0.004046625617975406
+    }
+  },
+  "test_set_evaluated": false
+}

@@ -1,0 +1,32 @@
+{
+  "experiment": "spacing-aware Frangi exploratory baseline",
+  "validation_patients": [
+    "PA000005",
+    "PA000100",
+    "PA000107",
+    "PA000115",
+    "PA000194",
+    "PA000202",
+    "PA000226",
+    "PA000238",
+    "PA000261",
+    "PA000292",
+    "PA000300",
+    "PA000301",
+    "PA000307",
+    "PA000310",
+    "PA000314"
+  ],
+  "threshold_tuning_patient": "PA000005",
+  "threshold": 0.05911483025321593,
+  "target_spacing_mm": 1.0,
+  "physical_sigmas_mm": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "mean_dice": 0.25754746396552014,
+  "mean_precision": 0.212953549420828,
+  "mean_recall": 0.3340044560638711,
+  "warning": "Small validation subset; threshold tuned on a validation patient. Results are exploratory and are not held-out test performance. Frangi is not artery-specific."
+}

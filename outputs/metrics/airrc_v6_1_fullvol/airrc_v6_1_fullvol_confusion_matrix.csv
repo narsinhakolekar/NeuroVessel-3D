@@ -1,0 +1,4 @@
+Ground truth,Predicted background,Predicted PA,Predicted PV
+Background,990606558,832661,2115956
+Pulmonary_Artery,566506,5041967,417622
+Pulmonary_Vein,307406,771461,4591712

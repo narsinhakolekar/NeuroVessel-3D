@@ -1,0 +1,17 @@
+{
+  "architecture": "Residual 3D U-Net",
+  "base_channels": 8,
+  "patch_size": 64,
+  "batch_size": 1,
+  "epochs_requested": 1,
+  "learning_rate": 0.0002,
+  "window_low": -1000,
+  "window_high": 1000,
+  "foreground_probability": 0.75,
+  "positive_bce_weight": 3.0,
+  "seed": 42,
+  "amp": true,
+  "device": "cuda",
+  "smoke_test": true,
+  "validation_method": "Two deterministic patches per validation patient; not full-volume Dice."
+}

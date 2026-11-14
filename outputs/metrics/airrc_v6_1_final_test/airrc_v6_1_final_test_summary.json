@@ -1,0 +1,122 @@
+{
+  "project": "NeuroVessel",
+  "version": "airrc_v6_1_final_test",
+  "task": "Final independent full-volume test of three-class pulmonary artery and pulmonary vein segmentation",
+  "checkpoint": "outputs\\checkpoints\\airrc_v6_1_multiclass_best.pt",
+  "checkpoint_epoch": 29,
+  "best_patch_validation_dice": 0.8108644421432855,
+  "architecture": "Residual 3D U-Net",
+  "base_channels": 8,
+  "class_mapping": {
+    "0": "Background",
+    "1": "Pulmonary artery",
+    "2": "Pulmonary vein"
+  },
+  "evaluation_protocol": {
+    "method": "Full-volume sliding-window inference",
+    "roi_size": [
+      96,
+      96,
+      96
+    ],
+    "overlap": 0.5,
+    "blend_mode": "Gaussian",
+    "sw_batch_size": 1,
+    "window_low": -1000.0,
+    "window_high": 1000.0,
+    "normalization": "Clip and scale to [0,1]",
+    "classification": "Three-class argmax"
+  },
+  "dataset": {
+    "training_patients_in_split": 202,
+    "validation_patients_in_split": 26,
+    "test_patients_in_split": 26,
+    "test_patients_evaluated": 26,
+    "training_volumes_loaded": false,
+    "validation_volumes_loaded": false,
+    "test_volumes_loaded": true,
+    "evaluation_role": "Final independent test; not for model selection or tuning"
+  },
+  "reproducibility": {
+    "checkpoint_sha256": "5e54e638118f7b0317c3d6bc0980c6ba9f3cd2c2bdfdfe9e80d113941e2bc460",
+    "split_manifest_sha256": "e8aa5ef6d40186625f8ae20f6832392e936a323465463f38fef08bd9a84a3e9f"
+  },
+  "macro_patient_average": {
+    "pa_dice": 0.7864475946057989,
+    "pa_precision": 0.7440477591357143,
+    "pa_recall": 0.835223169574231,
+    "pv_dice": 0.713037384000595,
+    "pv_precision": 0.6490702973340535,
+    "pv_recall": 0.7971713134598413,
+    "mean_foreground_dice": 0.749742489303197
+  },
+  "micro_voxel_aggregate": {
+    "pa": {
+      "dice": 0.7869435475376495,
+      "precision": 0.7445959199882249,
+      "recall": 0.8343985468767208,
+      "true_positive": 4841283,
+      "false_positive": 1660610,
+      "false_negative": 960840,
+      "predicted_voxels": 6501893,
+      "ground_truth_voxels": 5802123
+    },
+    "pv": {
+      "dice": 0.7133283615351383,
+      "precision": 0.6449651093859444,
+      "recall": 0.7979022248218379,
+      "true_positive": 4638066,
+      "false_positive": 2553123,
+      "false_negative": 1174759,
+      "predicted_voxels": 7191189,
+      "ground_truth_voxels": 5812825
+    },
+    "foreground_micro_dice": 0.7491178886701177,
+    "overall_voxel_accuracy": 0.9952935554287773,
+    "total_voxels": 1066221842
+  },
+  "cross_class_confusion": {
+    "pv_ground_truth_predicted_as_pa": 858080,
+    "pa_ground_truth_predicted_as_pv": 473138,
+    "fraction_of_pa_false_positives_from_pv": 0.5167257814899344,
+    "fraction_of_pv_false_positives_from_pa": 0.18531735447136702,
+    "fraction_of_ground_truth_pv_predicted_as_pa": 0.14761841273391166,
+    "fraction_of_ground_truth_pa_predicted_as_pv": 0.08154566871471011
+  },
+  "confusion_matrix": {
+    "rows": [
+      "Ground truth background",
+      "Ground truth PA",
+      "Ground truth PV"
+    ],
+    "columns": [
+      "Predicted background",
+      "Predicted PA",
+      "Predicted PV"
+    ],
+    "counts": [
+      [
+        1051724379,
+        802530,
+        2079985
+      ],
+      [
+        487702,
+        4841283,
+        473138
+      ],
+      [
+        316679,
+        858080,
+        4638066
+      ]
+    ]
+  },
+  "outputs": {
+    "per_patient_csv": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_per_patient.csv",
+    "confusion_matrix_csv": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_confusion_matrix.csv",
+    "summary_json": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_summary.json",
+    "predictions_directory": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\predictions\\airrc_v6_1_final_test",
+    "visualizations_directory": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\visualizations\\airrc_v6_1_final_test"
+  }
+}

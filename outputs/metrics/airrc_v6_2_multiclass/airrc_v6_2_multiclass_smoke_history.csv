@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,val_pa_patch_dice,val_pv_patch_dice,val_mean_foreground_patch_dice,learning_rate,epoch_seconds
+1,0.9447882423798243,0.9361248463392258,0.03828149639338742,0.14590304121164893,0.09209226880251817,0.0002,34.37890696525574

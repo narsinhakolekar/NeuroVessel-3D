@@ -1,0 +1,115 @@
+{
+  "project": "NeuroVessel",
+  "version": "airrc_v6_1_fullvol",
+  "task": "Full-volume three-class pulmonary artery and pulmonary vein segmentation",
+  "checkpoint": "outputs\\checkpoints\\airrc_v6_1_multiclass_best.pt",
+  "checkpoint_epoch": 29,
+  "best_patch_validation_dice": 0.8108644421432855,
+  "architecture": "Residual 3D U-Net",
+  "base_channels": 8,
+  "class_mapping": {
+    "0": "Background",
+    "1": "Pulmonary artery",
+    "2": "Pulmonary vein"
+  },
+  "evaluation_protocol": {
+    "method": "Full-volume sliding-window inference",
+    "roi_size": [
+      96,
+      96,
+      96
+    ],
+    "overlap": 0.5,
+    "blend_mode": "Gaussian",
+    "sw_batch_size": 1,
+    "window_low": -1000.0,
+    "window_high": 1000.0,
+    "normalization": "Clip and scale to [0,1]",
+    "classification": "Three-class argmax"
+  },
+  "dataset": {
+    "training_patients_in_split": 202,
+    "validation_patients_in_split": 26,
+    "validation_patients_evaluated": 26,
+    "locked_test_patients": 26,
+    "test_partition_loaded": false
+  },
+  "macro_patient_average": {
+    "pa_dice": 0.7916697860596501,
+    "pa_precision": 0.7567812562627465,
+    "pa_recall": 0.832038199629517,
+    "pv_dice": 0.7231009745290969,
+    "pv_precision": 0.6613323414806237,
+    "pv_recall": 0.8094234302808025,
+    "mean_foreground_dice": 0.7573853802943733
+  },
+  "micro_voxel_aggregate": {
+    "pa": {
+      "dice": 0.7957534391861735,
+      "precision": 0.7586366959575774,
+      "recall": 0.8366889337124622,
+      "true_positive": 5041967,
+      "false_positive": 1604122,
+      "false_negative": 984128,
+      "predicted_voxels": 6646089,
+      "ground_truth_voxels": 6026095
+    },
+    "pv": {
+      "dice": 0.7176866221434434,
+      "precision": 0.6444245778066577,
+      "recall": 0.8097430615110026,
+      "true_positive": 4591712,
+      "false_positive": 2533578,
+      "false_negative": 1078867,
+      "predicted_voxels": 7125290,
+      "ground_truth_voxels": 5670579
+    },
+    "foreground_micro_dice": 0.7565304658349816,
+    "overall_voxel_accuracy": 0.9950145707217695,
+    "total_voxels": 1005251849
+  },
+  "cross_class_confusion": {
+    "pv_ground_truth_predicted_as_pa": 771461,
+    "pa_ground_truth_predicted_as_pv": 417622,
+    "fraction_of_pa_false_positives_from_pv": 0.4809241441735728,
+    "fraction_of_pv_false_positives_from_pa": 0.1648348698954601,
+    "fraction_of_ground_truth_pv_predicted_as_pa": 0.1360462485400521,
+    "fraction_of_ground_truth_pa_predicted_as_pv": 0.06930225958933604
+  },
+  "confusion_matrix": {
+    "rows": [
+      "Ground truth background",
+      "Ground truth PA",
+      "Ground truth PV"
+    ],
+    "columns": [
+      "Predicted background",
+      "Predicted PA",
+      "Predicted PV"
+    ],
+    "counts": [
+      [
+        990606558,
+        832661,
+        2115956
+      ],
+      [
+        566506,
+        5041967,
+        417622
+      ],
+      [
+        307406,
+        771461,
+        4591712
+      ]
+    ]
+  },
+  "outputs": {
+    "per_patient_csv": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_per_patient.csv",
+    "confusion_matrix_csv": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_confusion_matrix.csv",
+    "summary_json": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_summary.json",
+    "predictions_directory": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\predictions\\airrc_v6_1_fullvol",
+    "visualizations_directory": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\visualizations\\airrc_v6_1_fullvol"
+  }
+}

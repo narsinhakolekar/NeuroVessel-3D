@@ -1,0 +1,107 @@
+{
+  "total_cases": 254,
+  "processed": 254,
+  "errors": 0,
+  "erosion_definition": "one iteration of 6-connected 3D binary erosion on PA label 3",
+  "intensity_note": "Values are reported as read from the LUNA16 MetaImage data after linear resampling; HU calibration has not been independently verified by this script.",
+  "csv_report": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_pa_core_intensity.csv",
+  "errors_detail": [],
+  "groups": {
+    "Contrast-Enhanced": {
+      "cases": 232,
+      "pa_all_p50": {
+        "median_across_cases": -40.118021965026855,
+        "p10_across_cases": -172.67752990722656,
+        "p90_across_cases": 118.16510314941408
+      },
+      "pa_core_p50": {
+        "median_across_cases": 30.172526359558105,
+        "p10_across_cases": 17.041247749328612,
+        "p90_across_cases": 271.4731979370117
+      },
+      "pa_shell_p50": {
+        "median_across_cases": -530.76171875,
+        "p10_across_cases": -600.9594818115235,
+        "p90_across_cases": -395.40926666259764
+      },
+      "pa_all_p95": {
+        "median_across_cases": 84.40077667236328,
+        "p10_across_cases": 59.27357082366943,
+        "p90_across_cases": 327.5552536010743
+      },
+      "pa_core_p95": {
+        "median_across_cases": 93.46392192840572,
+        "p10_across_cases": 65.26879550933836,
+        "p90_across_cases": 342.25048416137696
+      },
+      "pa_all_frac_below_-200": {
+        "median_across_cases": 0.40318865196765796,
+        "p10_across_cases": 0.31025720772301846,
+        "p90_across_cases": 0.4908223015894093
+      },
+      "pa_core_frac_below_-200": {
+        "median_across_cases": 0.11356407738930611,
+        "p10_across_cases": 0.04354153067118607,
+        "p90_across_cases": 0.17432873625601483
+      },
+      "pa_all_frac_above_100": {
+        "median_across_cases": 0.022823922168522394,
+        "p10_across_cases": 0.0013661943630998452,
+        "p90_across_cases": 0.5228576946347344
+      },
+      "pa_core_frac_above_100": {
+        "median_across_cases": 0.0360814338155159,
+        "p10_across_cases": 0.0017685702750388202,
+        "p90_across_cases": 0.848639872884246
+      }
+    },
+    "Non-Contrast": {
+      "cases": 22,
+      "pa_all_p50": {
+        "median_across_cases": -25.75867462158203,
+        "p10_across_cases": -250.25209732055663,
+        "p90_across_cases": 42.68315639495851
+      },
+      "pa_core_p50": {
+        "median_across_cases": 28.666336059570312,
+        "p10_across_cases": 15.986387920379638,
+        "p90_across_cases": 333.8339477539063
+      },
+      "pa_shell_p50": {
+        "median_across_cases": -537.697509765625,
+        "p10_across_cases": -627.2224914550782,
+        "p90_across_cases": -439.53100585937494
+      },
+      "pa_all_p95": {
+        "median_across_cases": 73.94462623596192,
+        "p10_across_cases": 48.87439582824707,
+        "p90_across_cases": 407.7082305908204
+      },
+      "pa_core_p95": {
+        "median_across_cases": 85.09128246307372,
+        "p10_across_cases": 52.197697486877445,
+        "p90_across_cases": 419.20145980834974
+      },
+      "pa_all_frac_below_-200": {
+        "median_across_cases": 0.411415919267332,
+        "p10_across_cases": 0.3809382856780294,
+        "p90_across_cases": 0.5215987098552748
+      },
+      "pa_core_frac_below_-200": {
+        "median_across_cases": 0.11536855597110618,
+        "p10_across_cases": 0.07322834385411808,
+        "p90_across_cases": 0.1919479996733033
+      },
+      "pa_all_frac_above_100": {
+        "median_across_cases": 0.015665369256832824,
+        "p10_across_cases": 0.0005198613779540365,
+        "p90_across_cases": 0.4628836453865031
+      },
+      "pa_core_frac_above_100": {
+        "median_across_cases": 0.022751459523808387,
+        "p10_across_cases": 0.0006305574493671856,
+        "p90_across_cases": 0.8035818016825885
+      }
+    }
+  }
+}

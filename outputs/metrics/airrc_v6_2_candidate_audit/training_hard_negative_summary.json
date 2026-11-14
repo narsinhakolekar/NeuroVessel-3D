@@ -1,0 +1,28 @@
+{
+  "experiment": "NeuroVessel V6.2 candidate audit",
+  "data_scope": "training partition only",
+  "training_patients": 202,
+  "validation_patients": 26,
+  "locked_test_patients": 26,
+  "validation_images_loaded": false,
+  "locked_test_images_loaded": false,
+  "model_inference_performed": false,
+  "model_training_performed": false,
+  "thresholds": {
+    "-500": {
+      "ct_threshold_exclusive": -500.0,
+      "eligible_background_centres": 3452035186,
+      "fraction_of_all_background": 0.43958600776150053
+    },
+    "-300": {
+      "ct_threshold_exclusive": -300.0,
+      "eligible_background_centres": 3372500586,
+      "fraction_of_all_background": 0.42945798315888345
+    },
+    "0": {
+      "ct_threshold_exclusive": 0.0,
+      "eligible_background_centres": 1739552403,
+      "fraction_of_all_background": 0.22151654167023746
+    }
+  }
+}

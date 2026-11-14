@@ -1,0 +1,11 @@
+{
+    "validation_patients_analyzed": 15,
+    "mean_patient_auc": 0.9826449705999999,
+    "pooled_sample_auc": 0.9826627896382224,
+    "mean_pa_background_ratio": 836.1970864019687,
+    "mean_pa_frangi": 0.4323445041974386,
+    "mean_background_frangi": 0.0006015121665162345,
+    "mean_surrounding_frangi": 0.022702273540198804,
+    "test_patients_evaluated": 0,
+    "interpretation_note": "Frangi-only ROC-AUC measures feature separability, not segmentation performance."
+}

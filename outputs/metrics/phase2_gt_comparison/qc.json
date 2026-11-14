@@ -1,0 +1,689 @@
+{
+  "project": "NeuroVessel",
+  "evaluation": "locked_test_ground_truth_vs_v6_1_prediction",
+  "test_cases_expected": 26,
+  "test_cases_processed": 26,
+  "unique_test_uids": 26,
+  "all_geometry_verified": true,
+  "all_label_values_valid": true,
+  "ct_directory": "data\\processed_airrc_v5\\images",
+  "ground_truth_directory": "data\\processed_airrc_v6\\labels_multiclass",
+  "prediction_directory": "outputs\\predictions\\airrc_v6_1_final_test",
+  "ground_truth_label_mapping": {
+    "0": "background",
+    "1": "PA",
+    "2": "PV"
+  },
+  "prediction_label_mapping": {
+    "0": "background",
+    "1": "PA",
+    "2": "PV"
+  },
+  "component_connectivity": "26-neighbour",
+  "skeletonization": "scikit-image skeletonize, method=lee",
+  "approximate_skeleton_length": "skeleton voxel count multiplied by mean voxel spacing; coarse proxy, not a graph-based physical centreline length",
+  "interpretation_limitations": [
+    "Topology descriptors are computed on digital masks.",
+    "Connected components are not anatomical branches.",
+    "Skeleton voxel counts and approximate lengths are not validated anatomical centreline measurements.",
+    "This is an evaluation only; no model or threshold tuning was done.",
+    "No pulmonary hypertension diagnosis or risk prediction is performed."
+  ],
+  "cases": [
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.114914167428485563471327801935",
+      "patient_id": "LIDC-IDRI-0810",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        286,
+        300,
+        300
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.118140393257625250121502185026",
+      "patient_id": "LIDC-IDRI-0973",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        347,
+        360,
+        360
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.129982010889624423230394257528",
+      "patient_id": "LIDC-IDRI-0118",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        331,
+        451,
+        451
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.141345499716190654505508410197",
+      "patient_id": "LIDC-IDRI-0880",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        321,
+        320,
+        320
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.141430002307216644912805017227",
+      "patient_id": "LIDC-IDRI-0400",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        386,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.170921541362033046216100409521",
+      "patient_id": "LIDC-IDRI-0299",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        338,
+        400,
+        400
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.177086402277715068525592995222",
+      "patient_id": "LIDC-IDRI-0075",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        321,
+        472,
+        472
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.179209990684978588019929720099",
+      "patient_id": "LIDC-IDRI-0358",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        351,
+        329,
+        329
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.193964947698259739624715468431",
+      "patient_id": "LIDC-IDRI-0488",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        288,
+        300,
+        300
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.200725988589959521302320481687",
+      "patient_id": "LIDC-IDRI-0860",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        336,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.222052723822248889877676736332",
+      "patient_id": "LIDC-IDRI-0844",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        300,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.229096941293122177107846044795",
+      "patient_id": "LIDC-IDRI-1003",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        334,
+        300,
+        300
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.232071262560365924176679652948",
+      "patient_id": "LIDC-IDRI-0815",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        263,
+        340,
+        340
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.264251211689085893915477907261",
+      "patient_id": "LIDC-IDRI-0386",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        314,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.265960756233787099041040311282",
+      "patient_id": "LIDC-IDRI-0908",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        334,
+        339,
+        339
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.277445975068759205899107114231",
+      "patient_id": "LIDC-IDRI-0413",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        318,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.280072876841890439628529365478",
+      "patient_id": "LIDC-IDRI-0775",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        334,
+        300,
+        300
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.293593766328917170359373773080",
+      "patient_id": "LIDC-IDRI-0639",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        258,
+        360,
+        360
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.295462530340364058116953738925",
+      "patient_id": "LIDC-IDRI-0377",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        322,
+        339,
+        339
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.313835996725364342034830119490",
+      "patient_id": "LIDC-IDRI-0939",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        290,
+        360,
+        360
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.317087518531899043292346860596",
+      "patient_id": "LIDC-IDRI-0940",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        296,
+        320,
+        320
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.336894364358709782463716339027",
+      "patient_id": "LIDC-IDRI-0727",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        324,
+        360,
+        360
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.417815314896088956784723476543",
+      "patient_id": "LIDC-IDRI-0735",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        280,
+        296,
+        296
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.487745546557477250336016826588",
+      "patient_id": "LIDC-IDRI-0023",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        342,
+        380,
+        380
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.557875302364105947813979213632",
+      "patient_id": "LIDC-IDRI-0437",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        348,
+        360,
+        360
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "uid": "1.3.6.1.4.1.14519.5.2.1.6279.6001.931383239747372227838946053237",
+      "patient_id": "LIDC-IDRI-0099",
+      "geometry_verified": true,
+      "gt_labels": [
+        0,
+        1,
+        2
+      ],
+      "prediction_labels": [
+        0,
+        1,
+        2
+      ],
+      "array_shape_zyx": [
+        242,
+        400,
+        400
+      ],
+      "spacing_xyz_mm": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "outputs": [
+    "outputs\\metrics\\phase2_gt_comparison\\case_metrics.csv",
+    "outputs\\metrics\\phase2_gt_comparison\\summary.csv",
+    "outputs\\metrics\\phase2_gt_comparison\\qc.json"
+  ]
+}

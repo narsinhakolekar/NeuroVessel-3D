@@ -1,0 +1,11 @@
+NEUROVESSEL PHASE 2 GRAPH ANALYSIS QC
+==================================================
+Prediction files: 26
+Unique UIDs: 26
+Case-class rows: 52
+Expected rows: 52
+Successful analyses: 52
+Non-OK analyses: 0
+Duplicate UID/class records: 0
+Prediction masks modified: NO
+Test-set tuning: NO

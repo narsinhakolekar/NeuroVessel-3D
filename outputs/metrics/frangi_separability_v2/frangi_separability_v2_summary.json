@@ -1,0 +1,42 @@
+{
+    "validation_patients_analyzed": 15,
+    "test_patients_evaluated": 0,
+    "sampling_method": "Uniform across complete 3D volume",
+    "samples_per_class_maximum": 50000,
+    "ring_width_pixels": 5,
+    "auc_pa_vs_random_background": {
+        "mean": 0.8933249706,
+        "std": 0.026732236767648642,
+        "minimum": 0.8397768448000001,
+        "maximum": 0.9336210938000001,
+        "bootstrap_95ci": [
+            0.8802740848223333,
+            0.9063755238276667
+        ]
+    },
+    "auc_pa_vs_surrounding_ring": {
+        "mean": 0.78509742052,
+        "std": 0.04626795204904216,
+        "minimum": 0.711290783,
+        "maximum": 0.8578983872000001,
+        "bootstrap_95ci": [
+            0.7627709249819999,
+            0.8083285478059998
+        ]
+    },
+    "auc_pa_vs_hard_background": {
+        "mean": 0.637724686,
+        "std": 0.08442730205930739,
+        "minimum": 0.4989719478,
+        "maximum": 0.762168302,
+        "bootstrap_95ci": [
+            0.5970314365903334,
+            0.6790702196656667
+        ]
+    },
+    "pooled_sample_auc": {
+        "pa_vs_random_background": 0.8936244513102223,
+        "pa_vs_surrounding_ring": 0.7840369735004444,
+        "pa_vs_hard_background": 0.6385977221377778
+    }
+}

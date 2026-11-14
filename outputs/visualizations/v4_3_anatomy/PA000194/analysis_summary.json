@@ -1,0 +1,48 @@
+{
+    "patient_id": "PA000194",
+    "probability_threshold": 0.75,
+    "minimum_component_size_voxels": 5000,
+    "connectivity": 26,
+    "raw_metrics": {
+        "dice": 0.2631523751160866,
+        "precision": 0.24540285007977114,
+        "recall": 0.2836696667901584,
+        "tp_voxels": 104134,
+        "fp_voxels": 320205,
+        "fn_voxels": 262962,
+        "predicted_voxels": 424339,
+        "ground_truth_voxels": 367096,
+        "predicted_to_gt_ratio": 1.1559346873842264
+    },
+    "filtered_metrics": {
+        "dice": 0.27583567236539935,
+        "precision": 0.3520576914943112,
+        "recall": 0.2267445028003574,
+        "tp_voxels": 83237,
+        "fp_voxels": 153193,
+        "fn_voxels": 283859,
+        "predicted_voxels": 236430,
+        "ground_truth_voxels": 367096,
+        "predicted_to_gt_ratio": 0.6440549611000937
+    },
+    "component_analysis": {
+        "original_component_count": 705,
+        "retained_component_count": 18,
+        "largest_component_voxels": 42880
+    },
+    "selected_slices": {
+        "Axial": {
+            "index": 187,
+            "ground_truth_voxels_on_slice": 8475
+        },
+        "Coronal": {
+            "index": 263,
+            "ground_truth_voxels_on_slice": 4426
+        },
+        "Sagittal": {
+            "index": 302,
+            "ground_truth_voxels_on_slice": 3460
+        }
+    },
+    "test_set_evaluated": false
+}

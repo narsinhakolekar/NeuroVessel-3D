@@ -1,0 +1,4079 @@
+{
+  "project": "NeuroVessel",
+  "audit_scope": "metadata-like files under data/ and outputs/",
+  "data_volumes_opened": false,
+  "checkpoints_opened": false,
+  "metadata_files_discovered": 220,
+  "candidate_metadata_files": 188,
+  "keyword_definitions": [
+    "pulmonary_hypertension",
+    "pulmonary_arterial_hypertension",
+    "pah_token",
+    "mpap",
+    "right_heart_catheterization",
+    "rvsp",
+    "echocardiography",
+    "ph_diagnosis_or_outcome"
+  ],
+  "important_note": "Keyword matches are leads for manual verification, not validated PH outcome labels. Absence of a match does not prove no external clinical metadata exists.",
+  "files": [
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000016\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000016\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000024\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1393,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000024\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000036\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000036\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000038\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000038\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000042\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000042\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000046\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1348,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000046\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000047\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1386,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000047\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000053\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1393,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000053\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000060\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000060\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000073\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1392,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000073\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000074\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1402,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000074\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000080\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1396,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000080\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000082\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000082\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000090\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1364,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000090\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000091\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000091\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000092\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1362,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000092\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000096\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1421,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000096\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000099\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000099\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000106\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1401,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000106\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000116\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1354,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000116\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000120\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000120\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000121\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1402,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000121\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000124\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000124\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000127\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1401,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000127\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000128\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000128\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000132\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000132\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000133\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1354,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000133\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000137\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000137\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000138\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000138\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000144\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000144\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000147\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1354,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000147\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000148\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1416,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000148\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000150\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000150\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000157\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000157\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000162\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1361,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000162\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000168\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1346,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000168\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000169\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000169\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000174\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000174\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000183\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1386,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000183\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000190\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000190\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000198\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1386,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000198\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000201\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1356,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000201\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000203\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1388,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000203\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000207\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000207\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000209\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000209\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000212\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1402,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000212\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000217\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1401,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000217\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000223\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000223\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000229\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1346,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000229\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000233\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1362,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000233\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000234\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1386,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000234\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000235\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000235\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000237\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1356,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000237\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000239\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1380,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000239\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000242\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000242\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000245\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1396,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000245\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000255\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1362,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000255\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000263\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1394,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000263\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000273\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1369,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000273\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000282\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1370,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000282\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000285\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1354,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000285\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000286\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1379,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000286\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000296\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1368,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000296\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000298\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1350,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000298\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000302\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000302\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000303\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1322,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000303\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000305\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1392,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000305\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000313\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1378,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000313\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000315\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1396,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000315\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\train\\PA000317\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1362,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000317\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000005\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1407,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000005\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000100\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1392,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000100\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000107\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1399,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000107\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000115\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1391,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000115\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000194\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1391,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000194\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000202\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1399,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000202\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000226\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1421,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000226\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000238\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1391,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000238\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000261\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1391,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000261\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000292\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1405,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000292\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000300\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1399,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000300\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000301\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1397,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000301\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000307\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1393,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000307\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000310\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1385,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000310\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\processed_v5\\validation\\PA000314\\geometry.json",
+      "extension": ".json",
+      "size_bytes": 1383,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patient_id\": \"PA000314\","
+        ]
+      }
+    },
+    {
+      "relative_path": "data\\splits.json",
+      "extension": ".json",
+      "size_bytes": 1985,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L9: \"note\": \"Internal patient-level split. Not necessarily the official benchmark split.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_1_full_30epochs\\airrc_v6_1_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1167,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L16: \"patches_per_patient\": 3,",
+          "L39: \"smoke_test\": false,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_1_full_30epochs\\airrc_v6_1_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3873,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_full_30epochs\\airrc_v6_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1250,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 2,",
+          "L18: \"training_sampling\": \"One PA-centred patch and one PV-centred patch per patient per epoch.\",",
+          "L36: \"smoke_test\": false,",
+          "L37: \"validation_method\": \"Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_full_30epochs\\airrc_v6_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3862,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_preflight_1epoch\\airrc_v6_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1249,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 2,",
+          "L18: \"training_sampling\": \"One PA-centred patch and one PV-centred patch per patient per epoch.\",",
+          "L36: \"smoke_test\": false,",
+          "L37: \"validation_method\": \"Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\archive\\airrc_v6_preflight_1epoch\\airrc_v6_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 248,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\frangi_features\\metadata.json",
+      "extension": ".json",
+      "size_bytes": 2143,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L9: \"storage_dtype\": \"float16\",",
+          "L10: \"processed_patients\": [",
+          "L96: \"skipped_patients\": [",
+          "L99: \"failed_patients\": [],",
+          "L100: \"test_patients_processed\": false"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_download_manifest.csv",
+      "extension": ".csv",
+      "size_bytes": 82999,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "luna_subset",
+          "contrast_status",
+          "mhd_path",
+          "raw_path",
+          "expected_raw_bytes",
+          "actual_raw_bytes",
+          "status",
+          "error"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_download_preflight.csv",
+      "extension": ".csv",
+      "size_bytes": 30668,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "luna_subset",
+          "contrast_status",
+          "http_status",
+          "raw_bytes"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_geometry_audit.csv",
+      "extension": ".csv",
+      "size_bytes": 215533,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "luna_subset",
+          "contrast_status",
+          "annotation_path",
+          "mhd_path",
+          "raw_path",
+          "status",
+          "issues",
+          "expected_raw_bytes",
+          "actual_raw_bytes",
+          "ct_size_xyz",
+          "ct_spacing_xyz_mm",
+          "ct_origin_lps_mm",
+          "ct_direction",
+          "mask_size_xyz",
+          "mask_spacing_xyz_mm",
+          "mask_origin_lps_mm",
+          "mask_direction",
+          "ct_bounds_min_lps_mm",
+          "ct_bounds_max_lps_mm",
+          "mask_bounds_min_lps_mm",
+          "mask_bounds_max_lps_mm",
+          "label_values",
+          "pa_voxels",
+          "airway_lumen_voxels",
+          "airway_wall_voxels",
+          "pulmonary_vein_voxels",
+          "pa_outside_ct_center_domain",
+          "pa_outside_ct_fov",
+          "pa_ct_index_min_xyz",
+          "pa_ct_index_max_xyz"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_geometry_audit_summary.json",
+      "extension": ".json",
+      "size_bytes": 251,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_intensity_audit.csv",
+      "extension": ".csv",
+      "size_bytes": 165496,
+      "inspection": {
+        "headers": [
+          "index",
+          "patient_id",
+          "series_instance_uid",
+          "contrast_status",
+          "luna_subset",
+          "mhd_path",
+          "status",
+          "size_x",
+          "size_y",
+          "size_z",
+          "spacing_x_mm",
+          "spacing_y_mm",
+          "spacing_z_mm",
+          "origin_lps_x",
+          "origin_lps_y",
+          "origin_lps_z",
+          "pixel_type",
+          "voxel_count",
+          "sample_count",
+          "min_exact",
+          "max_exact",
+          "sample_mean",
+          "sample_std",
+          "sample_p0_5",
+          "sample_p1",
+          "sample_p5",
+          "sample_p25",
+          "sample_p50",
+          "sample_p75",
+          "sample_p95",
+          "sample_p99",
+          "sample_p99_5",
+          "pct_le_-1000",
+          "pct_le_-900",
+          "pct_le_-700",
+          "pct_ge_0",
+          "pct_ge_300",
+          "pct_ge_500",
+          "pct_ge_1000",
+          "pct_ge_2000",
+          "pct_ge_3000",
+          "pct_outside_int16_ct_range"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_intensity_audit_summary.json",
+      "extension": ".json",
+      "size_bytes": 7938,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_pa_core_intensity.csv",
+      "extension": ".csv",
+      "size_bytes": 363603,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "series_instance_uid",
+          "luna_subset",
+          "contrast_status",
+          "pa_voxels",
+          "core_voxels_after_1voxel_erosion",
+          "core_fraction_of_pa",
+          "ct_size_xyz",
+          "mask_size_xyz",
+          "ct_spacing_xyz",
+          "mask_spacing_xyz",
+          "pa_all_n",
+          "pa_all_p1",
+          "pa_all_p5",
+          "pa_all_p50",
+          "pa_all_p95",
+          "pa_all_p99",
+          "pa_all_mean",
+          "pa_all_min",
+          "pa_all_max",
+          "pa_all_frac_below_-500",
+          "pa_all_frac_above_-500",
+          "pa_all_frac_below_-200",
+          "pa_all_frac_above_-200",
+          "pa_all_frac_below_0",
+          "pa_all_frac_above_0",
+          "pa_all_frac_below_100",
+          "pa_all_frac_above_100",
+          "pa_all_frac_below_300",
+          "pa_all_frac_above_300",
+          "pa_all_frac_below_500",
+          "pa_all_frac_above_500",
+          "pa_all_frac_below_700",
+          "pa_all_frac_above_700",
+          "pa_all_frac_below_1000",
+          "pa_all_frac_above_1000",
+          "pa_core_n",
+          "pa_core_p1",
+          "pa_core_p5",
+          "pa_core_p50",
+          "pa_core_p95",
+          "pa_core_p99",
+          "pa_core_mean",
+          "pa_core_min",
+          "pa_core_max",
+          "pa_core_frac_below_-500",
+          "pa_core_frac_above_-500",
+          "pa_core_frac_below_-200",
+          "pa_core_frac_above_-200",
+          "pa_core_frac_below_0",
+          "pa_core_frac_above_0",
+          "pa_core_frac_below_100",
+          "pa_core_frac_above_100",
+          "pa_core_frac_below_300",
+          "pa_core_frac_above_300",
+          "pa_core_frac_below_500",
+          "pa_core_frac_above_500",
+          "pa_core_frac_below_700",
+          "pa_core_frac_above_700",
+          "pa_core_frac_below_1000",
+          "pa_core_frac_above_1000",
+          "pa_shell_n",
+          "pa_shell_p1",
+          "pa_shell_p5",
+          "pa_shell_p50",
+          "pa_shell_p95",
+          "pa_shell_p99",
+          "pa_shell_mean",
+          "pa_shell_min",
+          "pa_shell_max",
+          "pa_shell_frac_below_-500",
+          "pa_shell_frac_above_-500",
+          "pa_shell_frac_below_-200",
+          "pa_shell_frac_above_-200",
+          "pa_shell_frac_below_0",
+          "pa_shell_frac_above_0",
+          "pa_shell_frac_below_100",
+          "pa_shell_frac_above_100",
+          "pa_shell_frac_below_300",
+          "pa_shell_frac_above_300",
+          "pa_shell_frac_below_500",
+          "pa_shell_frac_above_500",
+          "pa_shell_frac_below_700",
+          "pa_shell_frac_above_700",
+          "pa_shell_frac_below_1000",
+          "pa_shell_frac_above_1000"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_pa_core_intensity_summary.json",
+      "extension": ".json",
+      "size_bytes": 3981,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L6: \"intensity_note\": \"Values are reported as read from the LUNA16 MetaImage data after linear resampling; HU calibration has not been independently verified by this script.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_pa_intensity_audit.csv",
+      "extension": ".csv",
+      "size_bytes": 167139,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "contrast_status",
+          "luna_subset",
+          "pa_voxels",
+          "pa_min",
+          "pa_max",
+          "pa_mean",
+          "pa_std",
+          "pa_p0_1",
+          "pa_p1",
+          "pa_p5",
+          "pa_p25",
+          "pa_p50",
+          "pa_p75",
+          "pa_p95",
+          "pa_p99",
+          "pa_p99_5",
+          "pa_p99_9",
+          "frac_pa_below_minus1000",
+          "frac_pa_above_-1000",
+          "frac_pa_below_minus500",
+          "frac_pa_above_-500",
+          "frac_pa_below_0",
+          "frac_pa_above_0",
+          "frac_pa_below_100",
+          "frac_pa_above_100",
+          "frac_pa_below_300",
+          "frac_pa_above_300",
+          "frac_pa_below_500",
+          "frac_pa_above_500",
+          "frac_pa_below_700",
+          "frac_pa_above_700",
+          "frac_pa_below_1000",
+          "frac_pa_above_1000",
+          "frac_pa_below_1500",
+          "frac_pa_above_1500",
+          "frac_pa_below_2000",
+          "frac_pa_above_2000",
+          "frac_pa_below_3000",
+          "frac_pa_above_3000",
+          "count_pa_below_1000",
+          "count_pa_above_500",
+          "count_pa_above_700",
+          "count_pa_above_1000",
+          "count_pa_above_1500",
+          "resampled_ct_matches_mask_grid"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_pa_intensity_audit_summary.json",
+      "extension": ".json",
+      "size_bytes": 15571,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_uid_manifest.csv",
+      "extension": ".csv",
+      "size_bytes": 96933,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "contrast_status",
+          "manufacturer",
+          "scanner_model",
+          "slice_thickness",
+          "original_pixel_spacing",
+          "annotation_path",
+          "mask_shape",
+          "mask_spacing_mm",
+          "mask_orientation"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_uid_manifest_with_luna_subset.csv",
+      "extension": ".csv",
+      "size_bytes": 98977,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "contrast_status",
+          "manufacturer",
+          "scanner_model",
+          "slice_thickness",
+          "original_pixel_spacing",
+          "annotation_path",
+          "mask_shape",
+          "mask_spacing_mm",
+          "mask_orientation",
+          "luna_subset"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_dataset_integrity.csv",
+      "extension": ".csv",
+      "size_bytes": 57336,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "split",
+          "contrast_status",
+          "preprocess_status",
+          "image_exists",
+          "mask_exists",
+          "size_xyz",
+          "spacing_xyz_mm",
+          "image_min",
+          "image_max",
+          "pa_voxels",
+          "pa_fraction",
+          "mask_labels",
+          "status",
+          "issues"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id",
+          "image_exists",
+          "image_min",
+          "image_max"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_dataset_integrity_summary.json",
+      "extension": ".json",
+      "size_bytes": 356,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L14: \"patient_leakage\": false,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_preprocess_manifest.csv",
+      "extension": ".csv",
+      "size_bytes": 105815,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "contrast_status",
+          "split",
+          "status",
+          "image_path",
+          "mask_path",
+          "size_xyz",
+          "spacing_xyz_mm",
+          "pa_voxels",
+          "pa_fraction",
+          "image_min",
+          "image_max",
+          "error"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id",
+          "image_path",
+          "image_min",
+          "image_max"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_preprocess_summary.json",
+      "extension": ".json",
+      "size_bytes": 1002,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L14: \"output_images\": \"data\\\\processed_airrc_v5\\\\images\",",
+          "L19: \"intensity_scale_note\": \"Values are stored as read from LUNA16 MetaImage data; independent HU calibration verification remains outstanding.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_smoke_config.json",
+      "extension": ".json",
+      "size_bytes": 449,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L15: \"smoke_test\": true,",
+          "L16: \"validation_method\": \"Two deterministic patches per validation patient; not full-volume Dice.\""
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_smoke_history.csv",
+      "extension": ".csv",
+      "size_bytes": 221,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_patch_dice",
+          "val_precision",
+          "val_recall",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5_splits.csv",
+      "extension": ".csv",
+      "size_bytes": 28762,
+      "inspection": {
+        "headers": [
+          "series_instance_uid",
+          "patient_id",
+          "contrast_status",
+          "luna_subset",
+          "split"
+        ],
+        "rows_scanned": 254,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_3d_audit\\aggregate_3d_error_summary.json",
+      "extension": ".json",
+      "size_bytes": 3991,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L6: \"patients_evaluated\": 26,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_3d_audit\\per_patient_3d_error_audit.csv",
+      "extension": ".csv",
+      "size_bytes": 29577,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "threshold",
+          "geometry_matches",
+          "shape_z",
+          "shape_y",
+          "shape_x",
+          "spacing_x_mm",
+          "spacing_y_mm",
+          "spacing_z_mm",
+          "voxel_volume_ml",
+          "dice",
+          "precision",
+          "recall",
+          "specificity",
+          "true_positive_voxels",
+          "false_positive_voxels",
+          "false_negative_voxels",
+          "true_negative_voxels",
+          "predicted_voxels",
+          "ground_truth_voxels",
+          "fp_fraction_of_prediction",
+          "fn_fraction_of_ground_truth",
+          "prediction_to_ground_truth_ratio",
+          "predicted_volume_ml",
+          "ground_truth_volume_ml",
+          "false_positive_volume_ml",
+          "false_negative_volume_ml",
+          "pred_26_component_count",
+          "pred_26_largest_component_voxels",
+          "pred_26_largest_component_fraction",
+          "pred_26_median_component_voxels",
+          "pred_26_mean_component_voxels",
+          "pred_26_components_ge_10",
+          "pred_26_components_ge_100",
+          "pred_26_small_components_lt_10",
+          "pred_26_small_component_voxel_fraction",
+          "pred_26_top_5_component_sizes",
+          "pred_26_components_intersecting_reference",
+          "pred_26_components_not_intersecting_reference",
+          "gt_26_component_count",
+          "gt_26_largest_component_voxels",
+          "gt_26_largest_component_fraction",
+          "gt_26_median_component_voxels",
+          "gt_26_mean_component_voxels",
+          "gt_26_components_ge_10",
+          "gt_26_components_ge_100",
+          "gt_26_small_components_lt_10",
+          "gt_26_small_component_voxel_fraction",
+          "gt_26_top_5_component_sizes",
+          "gt_26_components_intersecting_reference",
+          "gt_26_components_not_intersecting_reference",
+          "pred_6_component_count",
+          "pred_6_largest_component_voxels",
+          "pred_6_largest_component_fraction",
+          "pred_6_median_component_voxels",
+          "pred_6_mean_component_voxels",
+          "pred_6_components_ge_10",
+          "pred_6_components_ge_100",
+          "pred_6_small_components_lt_10",
+          "pred_6_small_component_voxel_fraction",
+          "pred_6_top_5_component_sizes",
+          "pred_6_components_intersecting_reference",
+          "pred_6_components_not_intersecting_reference",
+          "gt_6_component_count",
+          "gt_6_largest_component_voxels",
+          "gt_6_largest_component_fraction",
+          "gt_6_median_component_voxels",
+          "gt_6_mean_component_voxels",
+          "gt_6_components_ge_10",
+          "gt_6_components_ge_100",
+          "gt_6_small_components_lt_10",
+          "gt_6_small_component_voxel_fraction",
+          "gt_6_top_5_component_sizes",
+          "gt_6_components_intersecting_reference",
+          "gt_6_components_not_intersecting_reference",
+          "fp_26_component_count",
+          "fp_26_largest_component_voxels",
+          "fp_26_largest_component_fraction",
+          "fp_26_median_component_voxels",
+          "fp_26_mean_component_voxels",
+          "fp_26_components_ge_10",
+          "fp_26_components_ge_100",
+          "fp_26_small_components_lt_10",
+          "fp_26_small_component_voxel_fraction",
+          "fp_26_top_5_component_sizes",
+          "fp_26_components_intersecting_reference",
+          "fp_26_components_not_intersecting_reference",
+          "fn_26_component_count",
+          "fn_26_largest_component_voxels",
+          "fn_26_largest_component_fraction",
+          "fn_26_median_component_voxels",
+          "fn_26_mean_component_voxels",
+          "fn_26_components_ge_10",
+          "fn_26_components_ge_100",
+          "fn_26_small_components_lt_10",
+          "fn_26_small_component_voxel_fraction",
+          "fn_26_top_5_component_sizes",
+          "fn_26_components_intersecting_reference",
+          "fn_26_components_not_intersecting_reference"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_3d_audit\\selected_error_visualizations.csv",
+      "extension": ".csv",
+      "size_bytes": 1525,
+      "inspection": {
+        "headers": [
+          "uid",
+          "dice",
+          "fp_fraction_of_prediction",
+          "fn_fraction_of_ground_truth",
+          "visualization"
+        ],
+        "rows_scanned": 5,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_component_ablation\\component_ablation_metadata.json",
+      "extension": ".json",
+      "size_bytes": 824,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L7: \"validation_patients\": 26,",
+          "L8: \"locked_test_patients\": 26,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_component_ablation\\component_ablation_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 1537,
+      "inspection": {
+        "headers": [
+          "minimum_component_volume_mm3",
+          "patients",
+          "macro_dice",
+          "dice_std",
+          "macro_precision",
+          "macro_recall",
+          "micro_dice",
+          "micro_precision",
+          "micro_recall",
+          "total_tp",
+          "total_fp",
+          "total_fn",
+          "mean_remaining_components",
+          "mean_removed_components",
+          "mean_removed_prediction_fraction"
+        ],
+        "rows_scanned": 6,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patients"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_component_ablation\\per_patient_component_ablation.csv",
+      "extension": ".csv",
+      "size_bytes": 31879,
+      "inspection": {
+        "headers": [
+          "uid",
+          "minimum_component_volume_mm3",
+          "geometry_matches",
+          "original_component_count",
+          "remaining_components",
+          "removed_components",
+          "removed_prediction_voxels",
+          "removed_prediction_fraction",
+          "voxel_volume_mm3",
+          "dice",
+          "precision",
+          "recall",
+          "tp",
+          "fp",
+          "fn",
+          "predicted_voxels",
+          "ground_truth_voxels"
+        ],
+        "rows_scanned": 156,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_fullvol\\evaluation_summary.json",
+      "extension": ".json",
+      "size_bytes": 1013,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L14: \"validation_patients\": 26,",
+          "L15: \"locked_test_patients\": 26,",
+          "L33: \"metric_definition\": \"Full-volume metrics calculated over all voxels of each validation patient. Macro metrics are the unweighted average over patients. Micro metrics pool voxel counts across patients.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_fullvol\\per_patient_metrics.csv",
+      "extension": ".csv",
+      "size_bytes": 58413,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "specificity",
+          "intersection",
+          "predicted_voxels",
+          "target_voxels",
+          "true_negative",
+          "false_positive",
+          "false_negative"
+        ],
+        "rows_scanned": 286,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_fullvol\\threshold_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 2876,
+      "inspection": {
+        "headers": [
+          "threshold",
+          "patients",
+          "macro_dice",
+          "dice_std",
+          "median_dice",
+          "macro_precision",
+          "macro_recall",
+          "macro_specificity",
+          "micro_dice",
+          "micro_precision",
+          "micro_recall",
+          "micro_specificity",
+          "total_intersection",
+          "total_predicted_voxels",
+          "total_target_voxels",
+          "total_false_positive",
+          "total_false_negative"
+        ],
+        "rows_scanned": 11,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patients"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_pa_pv_annotation_audit\\pa_pv_annotation_verification.csv",
+      "extension": ".csv",
+      "size_bytes": 9864,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "annotation_path",
+          "annotation_shape_zyx",
+          "class_values",
+          "class_distribution_json",
+          "pa_voxels_original_class3",
+          "pv_voxels_original_class4",
+          "processed_pa_voxels",
+          "pa_pv_overlap_voxels",
+          "pa_mismatch_voxels",
+          "exact_pa_match",
+          "annotation_ct_geometry_match",
+          "annotation_processed_pa_geometry_match",
+          "verified"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_pa_pv_annotation_audit\\pa_pv_annotation_verification_summary.json",
+      "extension": ".json",
+      "size_bytes": 534,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L4: \"validation_patients_expected\": 26,",
+          "L5: \"validation_patients_audited\": 26,",
+          "L6: \"locked_test_patients\": 26,",
+          "L10: \"verified_patients\": 26,",
+          "L11: \"patients_with_errors\": 0,",
+          "L14: \"all_patients_verified\": true,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_pa_pv_confusion\\pa_pv_confusion_summary.json",
+      "extension": ".json",
+      "size_bytes": 3244,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L6: \"patients_evaluated\": 26,",
+          "L87: \"All comparisons use original AirRC class labels and verified matching image geometry.\""
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_pa_pv_confusion\\per_patient_class_confusion.csv",
+      "extension": ".csv",
+      "size_bytes": 16972,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "actual_class_id",
+          "actual_class_name",
+          "total_class_voxels",
+          "predicted_as_pa_voxels",
+          "fraction_of_class_predicted_as_pa"
+        ],
+        "rows_scanned": 130,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_pa_pv_confusion\\per_patient_pa_pv_confusion.csv",
+      "extension": ".csv",
+      "size_bytes": 11478,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "threshold",
+          "geometry_annotation_ct",
+          "geometry_annotation_processed_pa",
+          "geometry_annotation_prediction",
+          "original_pa_exact_match",
+          "pa_mismatch_voxels",
+          "total_voxels",
+          "predicted_pa_voxels",
+          "gt_pa_voxels",
+          "gt_pv_voxels",
+          "gt_airway_lumen_voxels",
+          "gt_airway_wall_voxels",
+          "gt_background_voxels",
+          "true_positive_pa_voxels",
+          "false_negative_pa_voxels",
+          "false_positive_total_voxels",
+          "predicted_pa_on_background",
+          "predicted_pa_on_airway_lumen",
+          "predicted_pa_on_airway_wall",
+          "predicted_pa_on_pv",
+          "pv_overlap_fraction_of_false_positives",
+          "pv_overlap_fraction_of_all_predictions",
+          "pv_voxel_prediction_rate",
+          "background_share_of_false_positives",
+          "airway_lumen_share_of_false_positives",
+          "airway_wall_share_of_false_positives",
+          "pv_share_of_false_positives",
+          "dice",
+          "precision",
+          "recall",
+          "specificity"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_preflight_config.json",
+      "extension": ".json",
+      "size_bytes": 843,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L24: \"smoke_test\": false,",
+          "L25: \"validation_method\": \"Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_preflight_history.csv",
+      "extension": ".csv",
+      "size_bytes": 218,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_patch_dice",
+          "val_precision",
+          "val_recall",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_smoke_config.json",
+      "extension": ".json",
+      "size_bytes": 842,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L24: \"smoke_test\": true,",
+          "L25: \"validation_method\": \"Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_smoke_history.csv",
+      "extension": ".csv",
+      "size_bytes": 222,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_patch_dice",
+          "val_precision",
+          "val_recall",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_wm1000_wp1000_config.json",
+      "extension": ".json",
+      "size_bytes": 844,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L24: \"smoke_test\": false,",
+          "L25: \"validation_method\": \"Deterministic multi-patch validation. Per-patient patch counts are aggregated, then macro-averaged. This is not full-volume Dice.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v5b_wm1000_wp1000_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3829,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_patch_dice",
+          "val_precision",
+          "val_recall",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_confidence_analysis\\confidence_calibration_bins.csv",
+      "extension": ".csv",
+      "size_bytes": 9625,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "group",
+          "bin",
+          "bin_lower",
+          "bin_upper",
+          "count",
+          "mean_confidence",
+          "mean_accuracy",
+          "absolute_calibration_gap"
+        ],
+        "rows_scanned": 95,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_confidence_analysis\\confidence_group_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 5784,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "group",
+          "total_voxels",
+          "sampled_voxels",
+          "prediction_agreement_with_saved",
+          "accuracy_vs_ground_truth",
+          "mean_predicted_confidence",
+          "median_predicted_confidence",
+          "fraction_confidence_ge_0_80",
+          "fraction_confidence_ge_0_90",
+          "mean_target_class_probability",
+          "median_target_class_probability",
+          "mean_gt_class_probability",
+          "mean_p_background",
+          "mean_p_pa",
+          "mean_p_pv",
+          "mean_entropy_normalized",
+          "median_entropy_normalized",
+          "mean_top1_top2_margin",
+          "multiclass_brier_score",
+          "mean_negative_log_likelihood",
+          "expected_calibration_error"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_confidence_analysis\\confidence_inference_checks.csv",
+      "extension": ".csv",
+      "size_bytes": 536,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "checkpoint",
+          "checkpoint_epoch",
+          "roi_size",
+          "overlap",
+          "blend_mode",
+          "argmax_agreement",
+          "status"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_confidence_analysis\\confidence_matched_pairs.csv",
+      "extension": ".csv",
+      "size_bytes": 42496636,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "error_group",
+          "control_group",
+          "match_distance",
+          "distance_units",
+          "error_i",
+          "error_j",
+          "error_k",
+          "control_i",
+          "control_j",
+          "control_k",
+          "error_world_x",
+          "error_world_y",
+          "error_world_z",
+          "control_world_x",
+          "control_world_y",
+          "control_world_z",
+          "error_stored_intensity",
+          "control_stored_intensity",
+          "delta_stored_intensity",
+          "error_model_clipped_intensity",
+          "control_model_clipped_intensity",
+          "delta_model_clipped_intensity",
+          "error_model_normalized_intensity",
+          "control_model_normalized_intensity",
+          "delta_model_normalized_intensity",
+          "error_local_mean_3",
+          "control_local_mean_3",
+          "delta_local_mean_3",
+          "error_local_std_3",
+          "control_local_std_3",
+          "delta_local_std_3",
+          "error_local_mean_7",
+          "control_local_mean_7",
+          "delta_local_mean_7",
+          "error_local_std_7",
+          "control_local_std_7",
+          "delta_local_std_7",
+          "error_gradient_magnitude",
+          "control_gradient_magnitude",
+          "delta_gradient_magnitude",
+          "error_p_background",
+          "control_p_background",
+          "error_p_pa",
+          "control_p_pa",
+          "error_p_pv",
+          "control_p_pv",
+          "error_predicted_class",
+          "control_predicted_class",
+          "error_ground_truth_class",
+          "control_ground_truth_class",
+          "error_max_probability",
+          "control_max_probability",
+          "error_target_probability",
+          "control_target_probability",
+          "delta_target_probability",
+          "delta_max_probability",
+          "error_entropy",
+          "control_entropy",
+          "delta_entropy",
+          "error_correct",
+          "control_correct",
+          "error_saved_prediction_agreement",
+          "control_saved_prediction_agreement"
+        ],
+        "rows_scanned": 42845,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_confidence_analysis\\confidence_matched_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 3743,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "error_group",
+          "control_group",
+          "matched_pairs",
+          "error_target_probability_median",
+          "control_target_probability_median",
+          "median_target_probability_difference",
+          "error_max_confidence_median",
+          "control_max_confidence_median",
+          "error_entropy_median",
+          "control_entropy_median",
+          "error_prediction_accuracy",
+          "control_prediction_accuracy",
+          "error_prediction_agreement",
+          "control_prediction_agreement"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_error_analysis\\component_localization.csv",
+      "extension": ".csv",
+      "size_bytes": 9055,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "uid",
+          "class",
+          "error_type",
+          "component_id",
+          "component_voxels",
+          "error_voxels",
+          "centroid_i",
+          "centroid_j",
+          "centroid_k",
+          "world_x_mm_RAS",
+          "world_y_mm_RAS",
+          "world_z_mm_RAS",
+          "bbox_i_min",
+          "bbox_i_max",
+          "bbox_j_min",
+          "bbox_j_max",
+          "bbox_k_min",
+          "bbox_k_max",
+          "background_error_voxels",
+          "other_vessel_error_voxels"
+        ],
+        "rows_scanned": 36,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_error_analysis\\component_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 1213,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "gt_voxels",
+          "pred_voxels",
+          "true_positive_voxels",
+          "false_positive_voxels",
+          "false_negative_voxels",
+          "fp_from_background",
+          "fp_from_other_vessel",
+          "precision",
+          "recall",
+          "dice",
+          "predicted_components",
+          "completely_false_components",
+          "completely_false_component_voxels",
+          "ground_truth_components",
+          "completely_missed_components",
+          "completely_missed_component_voxels"
+        ],
+        "rows_scanned": 6,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_error_analysis\\largest_false_positive_components.csv",
+      "extension": ".csv",
+      "size_bytes": 3548,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "component_id",
+          "component_voxels",
+          "correct_class_overlap_voxels",
+          "error_voxels",
+          "error_fraction",
+          "component_volume_mm3"
+        ],
+        "rows_scanned": 60,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_error_analysis\\largest_missed_components.csv",
+      "extension": ".csv",
+      "size_bytes": 3426,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "component_id",
+          "component_voxels",
+          "correct_class_overlap_voxels",
+          "error_voxels",
+          "error_fraction",
+          "component_volume_mm3"
+        ],
+        "rows_scanned": 60,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 177,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 8806,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_final_test\\airrc_v6_1_final_test_summary.json",
+      "extension": ".json",
+      "size_bytes": 4203,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"test_patients_in_split\": 26,",
+          "L34: \"test_patients_evaluated\": 26,",
+          "L44: \"macro_patient_average\": {",
+          "L116: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_1_final_test\\\\airrc_v6_1_final_test_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 176,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 8808,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol\\airrc_v6_1_fullvol_summary.json",
+      "extension": ".json",
+      "size_bytes": 3770,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"validation_patients_evaluated\": 26,",
+          "L34: \"locked_test_patients\": 26,",
+          "L37: \"macro_patient_average\": {",
+          "L109: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_1_fullvol\\\\airrc_v6_1_fullvol_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol_limit2\\airrc_v6_1_fullvol_limit2_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 167,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol_limit2\\airrc_v6_1_fullvol_limit2_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 928,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 2,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_fullvol_limit2\\airrc_v6_1_fullvol_limit2_summary.json",
+      "extension": ".json",
+      "size_bytes": 3803,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"validation_patients_evaluated\": 2,",
+          "L34: \"locked_test_patients\": 26,",
+          "L37: \"macro_patient_average\": {",
+          "L109: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_1_fullvol_limit2\\\\airrc_v6_1_fullvol_limit2_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_intensity_analysis\\ct_intensity_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 2689,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "group",
+          "total_voxels",
+          "sampled_voxels",
+          "mean",
+          "std",
+          "min",
+          "p05",
+          "p25",
+          "median",
+          "p75",
+          "p95",
+          "max",
+          "fraction_below_minus_500"
+        ],
+        "rows_scanned": 11,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_multiclass\\airrc_v6_1_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1167,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L16: \"patches_per_patient\": 3,",
+          "L39: \"smoke_test\": false,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_multiclass\\airrc_v6_1_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3873,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_multiclass\\airrc_v6_1_multiclass_smoke_config.json",
+      "extension": ".json",
+      "size_bytes": 1166,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L16: \"patches_per_patient\": 3,",
+          "L39: \"smoke_test\": true,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_multiclass\\airrc_v6_1_multiclass_smoke_history.csv",
+      "extension": ".csv",
+      "size_bytes": 249,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_spatial_hard_negative\\spatial_feature_groups.csv",
+      "extension": ".csv",
+      "size_bytes": 12777,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "group",
+          "total_voxels",
+          "sampled_voxels",
+          "distance_units",
+          "distance_to_gt_target_median",
+          "distance_to_gt_target_p95",
+          "stored_intensity_mean",
+          "stored_intensity_median",
+          "stored_intensity_std",
+          "stored_intensity_p05",
+          "stored_intensity_p95",
+          "model_clipped_intensity_mean",
+          "model_clipped_intensity_median",
+          "model_clipped_intensity_std",
+          "model_clipped_intensity_p05",
+          "model_clipped_intensity_p95",
+          "model_normalized_intensity_mean",
+          "model_normalized_intensity_median",
+          "model_normalized_intensity_std",
+          "model_normalized_intensity_p05",
+          "model_normalized_intensity_p95",
+          "local_mean_3_mean",
+          "local_mean_3_median",
+          "local_mean_3_std",
+          "local_mean_3_p05",
+          "local_mean_3_p95",
+          "local_std_3_mean",
+          "local_std_3_median",
+          "local_std_3_std",
+          "local_std_3_p05",
+          "local_std_3_p95",
+          "local_mean_7_mean",
+          "local_mean_7_median",
+          "local_mean_7_std",
+          "local_mean_7_p05",
+          "local_mean_7_p95",
+          "local_std_7_mean",
+          "local_std_7_median",
+          "local_std_7_std",
+          "local_std_7_p05",
+          "local_std_7_p95",
+          "gradient_magnitude_mean",
+          "gradient_magnitude_median",
+          "gradient_magnitude_std",
+          "gradient_magnitude_p05",
+          "gradient_magnitude_p95",
+          "fraction_clipped_low",
+          "fraction_clipped_high"
+        ],
+        "rows_scanned": 14,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_spatial_hard_negative\\spatial_matched_pairs.csv",
+      "extension": ".csv",
+      "size_bytes": 28713431,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "error_group",
+          "control_group",
+          "match_distance",
+          "distance_units",
+          "error_i",
+          "error_j",
+          "error_k",
+          "control_i",
+          "control_j",
+          "control_k",
+          "error_world_x",
+          "error_world_y",
+          "error_world_z",
+          "control_world_x",
+          "control_world_y",
+          "control_world_z",
+          "error_stored_intensity",
+          "control_stored_intensity",
+          "delta_stored_intensity",
+          "error_model_clipped_intensity",
+          "control_model_clipped_intensity",
+          "delta_model_clipped_intensity",
+          "error_model_normalized_intensity",
+          "control_model_normalized_intensity",
+          "delta_model_normalized_intensity",
+          "error_local_mean_3",
+          "control_local_mean_3",
+          "delta_local_mean_3",
+          "error_local_std_3",
+          "control_local_std_3",
+          "delta_local_std_3",
+          "error_local_mean_7",
+          "control_local_mean_7",
+          "delta_local_mean_7",
+          "error_local_std_7",
+          "control_local_std_7",
+          "delta_local_std_7",
+          "error_gradient_magnitude",
+          "control_gradient_magnitude",
+          "delta_gradient_magnitude"
+        ],
+        "rows_scanned": 42845,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_1_spatial_hard_negative\\spatial_matching_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 7453,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "class",
+          "error_group",
+          "control_group",
+          "error_samples",
+          "available_controls",
+          "matched_pairs",
+          "match_rate",
+          "median_match_distance",
+          "p95_match_distance",
+          "distance_units",
+          "stored_intensity_delta_mean",
+          "stored_intensity_delta_median",
+          "model_clipped_intensity_delta_mean",
+          "model_clipped_intensity_delta_median",
+          "model_normalized_intensity_delta_mean",
+          "model_normalized_intensity_delta_median",
+          "local_mean_3_delta_mean",
+          "local_mean_3_delta_median",
+          "local_std_3_delta_mean",
+          "local_std_3_delta_median",
+          "local_mean_7_delta_mean",
+          "local_mean_7_delta_median",
+          "local_std_7_delta_mean",
+          "local_std_7_delta_median",
+          "gradient_magnitude_delta_mean",
+          "gradient_magnitude_delta_median"
+        ],
+        "rows_scanned": 18,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_candidate_audit\\training_hard_negative_candidates.csv",
+      "extension": ".csv",
+      "size_bytes": 48570,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "uid",
+          "volume_shape",
+          "total_voxels",
+          "background_voxels",
+          "background_fraction",
+          "background_intensity_median",
+          "background_centres_ct_gt_-500",
+          "eligible_fraction_of_background_gt_-500",
+          "background_centres_ct_gt_-300",
+          "eligible_fraction_of_background_gt_-300",
+          "background_centres_ct_gt_0",
+          "eligible_fraction_of_background_gt_0"
+        ],
+        "rows_scanned": 202,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_candidate_audit\\training_hard_negative_summary.json",
+      "extension": ".json",
+      "size_bytes": 875,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L4: \"training_patients\": 202,",
+          "L5: \"validation_patients\": 26,",
+          "L6: \"locked_test_patients\": 26,",
+          "L7: \"validation_images_loaded\": false,",
+          "L8: \"locked_test_images_loaded\": false,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_fullvol\\airrc_v6_2_fullvol_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 177,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_fullvol\\airrc_v6_2_fullvol_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 8808,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_fullvol\\airrc_v6_2_fullvol_summary.json",
+      "extension": ".json",
+      "size_bytes": 3771,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"validation_patients_evaluated\": 26,",
+          "L34: \"locked_test_patients\": 26,",
+          "L37: \"macro_patient_average\": {",
+          "L109: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_2_fullvol\\\\airrc_v6_2_fullvol_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_multiclass\\airrc_v6_2_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1750,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 3,",
+          "L46: \"smoke_test\": false,",
+          "L47: \"train_patients\": 202,",
+          "L48: \"validation_patients\": 26,",
+          "L49: \"locked_test_patients\": 26,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_multiclass\\airrc_v6_2_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3886,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_multiclass\\airrc_v6_2_multiclass_smoke_config.json",
+      "extension": ".json",
+      "size_bytes": 1745,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 3,",
+          "L46: \"smoke_test\": true,",
+          "L47: \"train_patients\": 4,",
+          "L48: \"validation_patients\": 2,",
+          "L49: \"locked_test_patients\": 26,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_2_multiclass\\airrc_v6_2_multiclass_smoke_history.csv",
+      "extension": ".csv",
+      "size_bytes": 248,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol\\airrc_v6_fullvol_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 179,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol\\airrc_v6_fullvol_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 8921,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol\\airrc_v6_fullvol_summary.json",
+      "extension": ".json",
+      "size_bytes": 3797,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"validation_patients_evaluated\": 26,",
+          "L34: \"locked_test_patients\": 26,",
+          "L37: \"macro_patient_average\": {",
+          "L109: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_fullvol\\\\airrc_v6_fullvol_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol_limit2\\airrc_v6_fullvol_limit2_confusion_matrix.csv",
+      "extension": ".csv",
+      "size_bytes": 169,
+      "inspection": {
+        "headers": [
+          "Ground truth",
+          "Predicted background",
+          "Predicted PA",
+          "Predicted PV"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol_limit2\\airrc_v6_fullvol_limit2_per_patient.csv",
+      "extension": ".csv",
+      "size_bytes": 941,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "volume_shape",
+          "pa_dice",
+          "pa_precision",
+          "pa_recall",
+          "pv_dice",
+          "pv_precision",
+          "pv_recall",
+          "mean_foreground_dice",
+          "gt_pa_voxels",
+          "pred_pa_voxels",
+          "gt_pv_voxels",
+          "pred_pv_voxels",
+          "pv_misclassified_as_pa",
+          "pa_misclassified_as_pv",
+          "pa_fp_from_pv_fraction",
+          "pv_fp_from_pa_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 2,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_fullvol_limit2\\airrc_v6_fullvol_limit2_summary.json",
+      "extension": ".json",
+      "size_bytes": 3832,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L31: \"training_patients_in_split\": 202,",
+          "L32: \"validation_patients_in_split\": 26,",
+          "L33: \"validation_patients_evaluated\": 2,",
+          "L34: \"locked_test_patients\": 26,",
+          "L37: \"macro_patient_average\": {",
+          "L109: \"per_patient_csv\": \"C:\\\\Users\\\\narsi\\\\Desktop\\\\Coding\\\\NeuroVessel\\\\outputs\\\\metrics\\\\airrc_v6_fullvol_limit2\\\\airrc_v6_fullvol_limit2_per_patient.csv\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_config.json",
+      "extension": ".json",
+      "size_bytes": 1250,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 2,",
+          "L18: \"training_sampling\": \"One PA-centred patch and one PV-centred patch per patient per epoch.\",",
+          "L36: \"smoke_test\": false,",
+          "L37: \"validation_method\": \"Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_history.csv",
+      "extension": ".csv",
+      "size_bytes": 3862,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 30,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_manifest.csv",
+      "extension": ".csv",
+      "size_bytes": 164933,
+      "inspection": {
+        "headers": [
+          "uid",
+          "patient_id",
+          "split",
+          "original_annotation",
+          "image_path",
+          "original_pa_mask",
+          "multiclass_label_path",
+          "background_voxels",
+          "pa_voxels",
+          "pv_voxels",
+          "pa_mismatch_voxels",
+          "geometry_verified",
+          "saved_file_verified"
+        ],
+        "rows_scanned": 228,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id",
+          "image_path"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_smoke_config.json",
+      "extension": ".json",
+      "size_bytes": 1248,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L17: \"patches_per_patient\": 2,",
+          "L18: \"training_sampling\": \"One PA-centred patch and one PV-centred patch per patient per epoch.\",",
+          "L36: \"smoke_test\": true,",
+          "L37: \"validation_method\": \"Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_smoke_history.csv",
+      "extension": ".csv",
+      "size_bytes": 246,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "train_loss",
+          "val_loss",
+          "val_pa_patch_dice",
+          "val_pv_patch_dice",
+          "val_mean_foreground_patch_dice",
+          "learning_rate",
+          "epoch_seconds"
+        ],
+        "rows_scanned": 1,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_multiclass\\airrc_v6_multiclass_summary.json",
+      "extension": ".json",
+      "size_bytes": 1040,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L10: \"training_patients_expected\": 202,",
+          "L11: \"training_patients_processed\": 202,",
+          "L12: \"validation_patients_expected\": 26,",
+          "L13: \"validation_patients_processed\": 26,",
+          "L14: \"locked_test_patients\": 26,",
+          "L19: \"successful_patients\": 228,",
+          "L20: \"failed_patients\": 0,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_test_label_preparation.csv",
+      "extension": ".csv",
+      "size_bytes": 11547,
+      "inspection": {
+        "headers": [
+          "uid",
+          "status",
+          "source_annotation",
+          "output_label",
+          "size_xyz",
+          "spacing_xyz_mm",
+          "background_voxels",
+          "pa_voxels",
+          "pv_voxels",
+          "verified_exact_source_remap"
+        ],
+        "rows_scanned": 26,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\airrc_v6_test_label_preparation_summary.json",
+      "extension": ".json",
+      "size_bytes": 546,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L14: \"ct_images_read\": 0,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\filter_baseline_PA000005_crop.csv",
+      "extension": ".csv",
+      "size_bytes": 222,
+      "inspection": {
+        "headers": [
+          "filter",
+          "dice",
+          "precision",
+          "recall",
+          "threshold",
+          "predicted_fraction"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\final_test_v4\\FINAL_COMPLETE.json",
+      "extension": ".json",
+      "size_bytes": 239,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L3: \"patients_evaluated\": 15,",
+          "L5: \"patient_results_file\": \"outputs\\\\metrics\\\\final_test_v4\\\\final_test_patient_results.csv\""
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\final_test_v4\\final_test_patient_results.csv",
+      "extension": ".csv",
+      "size_bytes": 2809,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "probability_threshold",
+          "minimum_component_size",
+          "connectivity",
+          "original_components",
+          "remaining_components",
+          "dice",
+          "precision",
+          "recall",
+          "tp",
+          "fp",
+          "fn",
+          "predicted_voxels",
+          "target_voxels",
+          "predicted_fraction",
+          "target_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\final_test_v4\\final_test_summary.json",
+      "extension": ".json",
+      "size_bytes": 1797,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L6: \"test_patients_evaluated\": 15,",
+          "L7: \"test_patient_ids\": [",
+          "L33: \"macro_patient_metrics\": {"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\frangi_separability\\frangi_separability_summary.json",
+      "extension": ".json",
+      "size_bytes": 485,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"validation_patients_analyzed\": 15,",
+          "L3: \"mean_patient_auc\": 0.9826449705999999,",
+          "L9: \"test_patients_evaluated\": 0,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\frangi_separability\\frangi_separability_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 3416,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "pa_mean",
+          "pa_median",
+          "pa_p95",
+          "background_mean",
+          "background_median",
+          "background_p95",
+          "surrounding_mean",
+          "surrounding_median",
+          "surrounding_p95",
+          "pa_background_mean_ratio",
+          "frangi_auc",
+          "pa_sample_count",
+          "background_sample_count",
+          "surrounding_sample_count"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\frangi_separability_v2\\frangi_separability_v2_summary.json",
+      "extension": ".json",
+      "size_bytes": 1285,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"validation_patients_analyzed\": 15,",
+          "L3: \"test_patients_evaluated\": 0,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\frangi_separability_v2\\frangi_separability_v2_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 4865,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "pa_mean",
+          "pa_median",
+          "pa_p95",
+          "background_mean",
+          "background_median",
+          "background_p95",
+          "ring_mean",
+          "ring_median",
+          "ring_p95",
+          "hard_background_mean",
+          "hard_background_median",
+          "hard_background_threshold",
+          "auc_pa_vs_random_background",
+          "auc_pa_vs_surrounding_ring",
+          "auc_pa_vs_hard_background",
+          "pa_samples",
+          "background_samples",
+          "ring_samples",
+          "hard_background_samples"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\interp_full_volume_summary.json",
+      "extension": ".json",
+      "size_bytes": 7523,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L4: \"validation_patient_count\": 15,",
+          "L8: \"mean_patient_dice\": 0.0556003176177671,",
+          "L9: \"std_patient_dice\": 0.0118161394970184,",
+          "L10: \"median_patient_dice\": 0.057948275113583025,",
+          "L11: \"mean_patient_precision\": 0.02920048254926444,",
+          "L12: \"mean_patient_recall\": 0.597332195178693,",
+          "L13: \"minimum_patient_dice\": 0.03560134834017618,",
+          "L14: \"maximum_patient_dice\": 0.07260249595585981,",
+          "L15: \"patient_results\": [",
+          "L17: \"patient_id\": \"PA000005\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\interp_full_volume_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 2380,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "volume_shape",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_voxels",
+          "ground_truth_voxels",
+          "predicted_foreground_fraction",
+          "ground_truth_foreground_fraction",
+          "inference_seconds"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\interp_threshold_sweep.csv",
+      "extension": ".csv",
+      "size_bytes": 13851,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_voxels",
+          "ground_truth_voxels",
+          "predicted_foreground_fraction",
+          "ground_truth_foreground_fraction"
+        ],
+        "rows_scanned": 105,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\interp_threshold_sweep_summary.json",
+      "extension": ".json",
+      "size_bytes": 2406,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L3: \"validation_patient_count\": 15,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\parse_dataset_audit.csv",
+      "extension": ".csv",
+      "size_bytes": 23631,
+      "inspection": {
+        "headers": [
+          "case",
+          "image_path",
+          "label_path",
+          "status",
+          "shape",
+          "spacing_mm",
+          "orientation",
+          "foreground_voxels",
+          "foreground_fraction",
+          "label_values",
+          "message"
+        ],
+        "rows_scanned": 100,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "image_path",
+          "message"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\spacing_aware_frangi_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 3193,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "original_shape",
+          "original_spacing_mm",
+          "isotropic_shape",
+          "target_spacing_mm",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction"
+        ],
+        "rows_scanned": 15,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\spacing_aware_frangi_validation_summary.json",
+      "extension": ".json",
+      "size_bytes": 816,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L3: \"validation_patients\": [",
+          "L20: \"threshold_tuning_patient\": \"PA000005\",",
+          "L31: \"warning\": \"Small validation subset; threshold tuned on a validation patient. Results are exploratory and are not held-out test performance. Frangi is not artery-specific.\""
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\test_frangi_precomputation.json",
+      "extension": ".json",
+      "size_bytes": 1587,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L3: \"test_patients\": [",
+          "L34: \"storage_dtype\": \"float16\",",
+          "L55: \"verified_complete_patients\": ["
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_baseline_history.json",
+      "extension": ".json",
+      "size_bytes": 354,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_interp_history.json",
+      "extension": ".json",
+      "size_bytes": 587,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v2_history.json",
+      "extension": ".json",
+      "size_bytes": 1541,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v2_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 8984,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "patient_id",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction",
+          "seconds"
+        ],
+        "rows_scanned": 75,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v3_frangi_history.json",
+      "extension": ".json",
+      "size_bytes": 1542,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v3_frangi_threshold_sweep.csv",
+      "extension": ".csv",
+      "size_bytes": 12304,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction"
+        ],
+        "rows_scanned": 105,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v3_frangi_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 8982,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "patient_id",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction",
+          "seconds"
+        ],
+        "rows_scanned": 75,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v4_hard_negative_history.json",
+      "extension": ".json",
+      "size_bytes": 2970,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v4_hard_negative_threshold_patientwise.csv",
+      "extension": ".csv",
+      "size_bytes": 32803,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction"
+        ],
+        "rows_scanned": 285,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v4_hard_negative_threshold_summary.json",
+      "extension": ".json",
+      "size_bytes": 854,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L5: \"validation_patients\": 15,",
+          "L6: \"test_patients_evaluated\": 0,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v4_hard_negative_threshold_sweep.csv",
+      "extension": ".csv",
+      "size_bytes": 2581,
+      "inspection": {
+        "headers": [
+          "threshold",
+          "mean_dice",
+          "std_dice",
+          "mean_precision",
+          "mean_recall",
+          "mean_predicted_fraction",
+          "mean_target_fraction",
+          "patients"
+        ],
+        "rows_scanned": 19,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patients"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\unet_v4_hard_negative_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 14776,
+      "inspection": {
+        "headers": [
+          "epoch",
+          "patient_id",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction",
+          "threshold",
+          "seconds"
+        ],
+        "rows_scanned": 120,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v2_postprocessing_summary.json",
+      "extension": ".json",
+      "size_bytes": 1380,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L4: \"patients\": 15,",
+          "L13: \"patients\": 15,",
+          "L22: \"patients\": 15,",
+          "L31: \"patients\": 15,",
+          "L40: \"patients\": 15,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v2_postprocessing_validation.csv",
+      "extension": ".csv",
+      "size_bytes": 9579,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "method",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction",
+          "predicted_voxels"
+        ],
+        "rows_scanned": 75,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v2_threshold_sweep.csv",
+      "extension": ".csv",
+      "size_bytes": 11922,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "predicted_fraction",
+          "target_fraction"
+        ],
+        "rows_scanned": 105,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v2_threshold_sweep_summary.json",
+      "extension": ".json",
+      "size_bytes": 2102,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": []
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v42_connected_components\\v42_patient_results.csv",
+      "extension": ".csv",
+      "size_bytes": 22357,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "probability_threshold",
+          "minimum_component_size",
+          "original_components",
+          "remaining_components",
+          "largest_component_voxels",
+          "dice",
+          "precision",
+          "recall",
+          "tp",
+          "fp",
+          "fn",
+          "predicted_voxels",
+          "target_voxels",
+          "predicted_fraction"
+        ],
+        "rows_scanned": 150,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v42_connected_components\\v42_summary.csv",
+      "extension": ".csv",
+      "size_bytes": 1690,
+      "inspection": {
+        "headers": [
+          "minimum_component_size",
+          "mean_dice",
+          "std_dice",
+          "mean_precision",
+          "mean_recall",
+          "mean_fp",
+          "mean_fn",
+          "mean_remaining_components",
+          "mean_predicted_fraction",
+          "patients"
+        ],
+        "rows_scanned": 10,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patients"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v42_connected_components\\v42_summary.json",
+      "extension": ".json",
+      "size_bytes": 5682,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L6: \"validation_patients\": 15,",
+          "L7: \"test_patients_evaluated\": 0,",
+          "L36: \"patients\": 15",
+          "L48: \"patients\": 15",
+          "L60: \"patients\": 15",
+          "L72: \"patients\": 15",
+          "L84: \"patients\": 15",
+          "L96: \"patients\": 15",
+          "L108: \"patients\": 15",
+          "L120: \"patients\": 15"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v4_frangi_error_analysis\\v4_frangi_error_results.csv",
+      "extension": ".csv",
+      "size_bytes": 1004,
+      "inspection": {
+        "headers": [
+          "patient_id",
+          "threshold",
+          "dice",
+          "precision",
+          "recall",
+          "tp_voxels",
+          "fp_voxels",
+          "fn_voxels",
+          "tp_frangi_mean",
+          "tp_frangi_median",
+          "tp_frangi_p95",
+          "fp_frangi_mean",
+          "fp_frangi_median",
+          "fp_frangi_p95",
+          "fn_frangi_mean",
+          "fn_frangi_median",
+          "fn_frangi_p95",
+          "auc_tp_vs_fp",
+          "auc_tp_vs_fn"
+        ],
+        "rows_scanned": 3,
+        "keyword_hits": {},
+        "clinical_header_candidates": [
+          "patient_id"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v4_frangi_error_analysis\\v4_frangi_error_summary.json",
+      "extension": ".json",
+      "size_bytes": 2751,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L2: \"patients_analyzed\": 3,",
+          "L3: \"patient_ids\": [",
+          "L10: \"test_patients_evaluated\": 0,",
+          "L13: \"patient_id\": \"PA000314\",",
+          "L34: \"patient_id\": \"PA000194\",",
+          "L55: \"patient_id\": \"PA000005\","
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\metrics\\v5_preprocessing_summary.json",
+      "extension": ".json",
+      "size_bytes": 247,
+      "inspection": {
+        "keyword_hits": {},
+        "clinical_term_lines": [
+          "L7: \"train_patients\": 70,",
+          "L8: \"validation_patients\": 15,",
+          "L9: \"test_patients_processed\": false,"
+        ]
+      }
+    },
+    {
+      "relative_path": "outputs\\reports\\NeuroVessel_Experimental_Results.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 19441,
+      "inspection": {
+        "sheets": [
+          {
+            "name": "Executive Summary",
+            "max_row": 22,
+            "max_column": 6
+          },
+          {
+            "name": "Epoch Comparison",
+            "max_row": 19,
+            "max_column": 12
+          },
+          {
+            "name": "V4.2 Component Ablation",
+            "max_row": 11,
+            "max_column": 10
+          },
+          {
+            "name": "Final Test Patients",
+            "max_row": 16,
+            "max_column": 17
+          },
+          {
+            "name": "Methodology Notes",
+            "max_row": 14,
+            "max_column": 2
+          }
+        ],
+        "keyword_hits": {
+          "pulmonary_hypertension": [
+            "Executive Summary!R21: • Pulmonary hypertension risk prediction has not yet been implemented. |  |  |  |  | ",
+            "Methodology Notes!R13: Research scope | Current project has a 3D U-Net segmentation pipeline. Foundation-model integration and pulmonary hypertension risk prediction remain future work."
+          ]
+        },
+        "clinical_header_candidates": [
+          "Patients",
+          "Patients",
+          "patient_id"
+        ]
+      }
+    }
+  ]
+}

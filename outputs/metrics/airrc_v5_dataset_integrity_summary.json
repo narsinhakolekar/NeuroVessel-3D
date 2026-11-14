@@ -1,0 +1,17 @@
+{
+  "total_cases": 254,
+  "pass": 254,
+  "fail": 0,
+  "split_counts": {
+    "train": 202,
+    "validation": 26,
+    "test": 26
+  },
+  "contrast_counts": {
+    "Contrast-Enhanced": 232,
+    "Non-Contrast": 22
+  },
+  "patient_leakage": false,
+  "total_pa_voxels": 56327386,
+  "csv_report": "outputs\\metrics\\airrc_v5_dataset_integrity.csv"
+}

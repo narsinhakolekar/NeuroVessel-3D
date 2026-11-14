@@ -1,0 +1,694 @@
+Comparing files app_old.py and APP.PY
+***** app_old.py
+    3:  
+    4:  Uses the selected V6.1 checkpoint and the same preprocessing and
+    5:  MONAI sliding-window inference settings as the final evaluator.
+    6:  This app is a research demonstration, not a clinical diagnostic tool.
+    7:  """
+***** APP.PY
+    3:  
+    4:  The app uses the selected V6.1 checkpoint and reproduces the final
+    5:  evaluator's preprocessing and MONAI sliding-window inference settings.
+    6:  Ground-truth comparison is enabled only for matching validation cases
+    7:  or when a user explicitly supplies a matching label volume.
+    8:  """
+*****
+
+***** app_old.py
+   16:  import numpy as np
+   17:  import SimpleITK as sitk
+***** APP.PY
+   17:  import numpy as np
+   18:  import pandas as pd
+   19:  import SimpleITK as sitk
+*****
+
+***** app_old.py
+   22:  
+   23:  # ---------------------------------------------------------------------
+   24:  # Project paths and model import
+   25:  # ---------------------------------------------------------------------
+   26:  PROJECT_ROOT = Path(__file__).resolve().parent
+***** APP.PY
+   24:  
+   25:  PROJECT_ROOT = Path(__file__).resolve().parent
+*****
+
+***** app_old.py
+   28:  CHECKPOINT_PATH = (
+   29:      PROJECT_ROOT
+   30:      / "outputs"
+   31:      / "checkpoints"
+   32:      / "airrc_v6_1_multiclass_best.pt"
+***** APP.PY
+   27:  CHECKPOINT_PATH = (
+   28:      PROJECT_ROOT / "outputs" / "checkpoints"
+   29:      / "airrc_v6_1_multiclass_best.pt"
+*****
+
+***** app_old.py
+   33:  )
+   34:  
+***** APP.PY
+   30:  )
+   31:  SPLIT_CSV = PROJECT_ROOT / "outputs" / "metrics" / "airrc_v5_splits.csv"
+   32:  LABEL_DIR = PROJECT_ROOT / "data" / "processed_airrc_v6" / "labels_multiclass"
+   33:  
+*****
+
+***** app_old.py
+   42:  
+   43:  # Exact settings from evaluate_airrc_v6_1_final_test.py
+   44:  NUM_CLASSES = 3
+***** APP.PY
+   41:  
+   42:  NUM_CLASSES = 3
+*****
+
+***** app_old.py
+   48:  OVERLAP = 0.5
+   49:  CLASS_LABELS = {
+   50:      0: "Background",
+   51:      1: "Pulmonary artery (PA)",
+   52:      2: "Pulmonary vein (PV)",
+   53:  }
+   54:  
+   55:  
+***** APP.PY
+   46:  OVERLAP = 0.5
+   47:  CLASS_NAMES = {0: "Background", 1: "PA", 2: "PV"}
+   48:  
+*****
+
+***** app_old.py
+   63:  st.subheader("3D Pulmonary Artery and Vein Segmentation")
+   64:  st.caption(
+   65:      "Research demonstration -+ Residual 3D U-Net V6.1 -+ "
+   66:      "AirRC-trained checkpoint"
+   67:  )
+***** APP.PY
+   56:  st.subheader("3D Pulmonary Artery and Vein Segmentation")
+   57:  st.caption("Research demonstration -+ Residual 3D U-Net V6.1 -+ AirRC-trained checkpoint")
+   58:  st.warning(
+   59:      "Research use only. This application is not a medical device and must not "
+   60:      "be used for diagnosis, treatment, or clinical decisions. Predictions may "
+   61:      "contain false positives, missed vessels, and PA/PV class confusion."
+   62:  )
+*****
+
+***** app_old.py
+   68:  
+   69:  st.warning(
+   70:      "Research use only. This application is not a medical device and "
+   71:      "must not be used for diagnosis, treatment, or clinical decisions. "
+   72:      "Predictions may contain false positives, missed vessels, and "
+   73:      "PA/PV class confusion."
+   74:  )
+   75:  
+   76:  
+***** APP.PY
+   63:  
+   64:  
+*****
+
+***** app_old.py
+   89:          raise FileNotFoundError(f"Checkpoint not found: {checkpoint}")
+   90:  
+   91:      device = torch.device(device_string)
+   92:      state = torch.load(
+   93:          checkpoint,
+   94:          map_location="cpu",
+   95:          weights_only=False,
+   96:      )
+   97:  
+   98:      if "model_state_dict" not in state:
+***** APP.PY
+   77:          raise FileNotFoundError(f"Checkpoint not found: {checkpoint}")
+   78:      device = torch.device(device_string)
+   79:      state = torch.load(checkpoint, map_location="cpu", weights_only=False)
+   80:      if "model_state_dict" not in state:
+*****
+
+***** app_old.py
+   99:          raise KeyError("Checkpoint has no model_state_dict.")
+  100:  
+  101:      config = state.get("config", {})
+***** APP.PY
+   81:          raise KeyError("Checkpoint has no model_state_dict.")
+   82:      config = state.get("config", {})
+*****
+
+***** app_old.py
+  103:          raise ValueError("Checkpoint is not configured for 3 output classes.")
+  104:  
+  105:      epoch = state.get("epoch")
+***** APP.PY
+   84:          raise ValueError("Checkpoint is not configured for 3 output classes.")
+   85:      epoch = state.get("epoch")
+*****
+
+***** app_old.py
+  106:      if epoch != 29:
+  107:          raise ValueError(
+  108:              f"Expected selected V6.1 epoch 29, but checkpoint says {epoch!r}."
+  109:          )
+  110:  
+  111:      score = state.get("best_val_mean_foreground_patch_dice")
+***** APP.PY
+   86:      if epoch != 29:
+   87:          raise ValueError(f"Expected V6.1 epoch 29, found {epoch!r}.")
+   88:      score = state.get("best_val_mean_foreground_patch_dice")
+*****
+
+***** app_old.py
+  115:          raise ValueError("Checkpoint does not match the selected V6.1 model.")
+  116:  
+  117:      model = NeuroVesselV6(
+  118:          in_channels=1,
+  119:          out_channels=3,
+  120:          base=8,
+  121:      ).to(device)
+  122:      model.load_state_dict(state["model_state_dict"], strict=True)
+***** APP.PY
+   92:          raise ValueError("Checkpoint does not match the selected V6.1 model.")
+   93:      model = NeuroVesselV6(in_channels=1, out_channels=3, base=8).to(device)
+   94:      model.load_state_dict(state["model_state_dict"], strict=True)
+*****
+
+***** app_old.py
+  123:      model.eval()
+  124:  
+  125:      metadata = {
+  126:          "epoch": int(epoch),
+***** APP.PY
+   95:      model.eval()
+   96:      return model, device, {
+   97:          "epoch": int(epoch),
+*****
+
+***** app_old.py
+  129:      }
+  130:      return model, device, metadata
+  131:  
+***** APP.PY
+  100:      }
+  101:  
+*****
+
+***** app_old.py
+  133:  def normalize_ct(image: np.ndarray) -> np.ndarray:
+  134:      normalized = np.clip(
+  135:          image, WINDOW_LOW, WINDOW_HIGH
+  136:      ).astype(np.float32, copy=False)
+  137:      normalized = (normalized - WINDOW_LOW) / (
+  138:          WINDOW_HIGH - WINDOW_LOW
+  139:      )
+  140:      return normalized.astype(np.float32, copy=False)
+  141:  
+***** APP.PY
+  103:  def normalize_ct(image: np.ndarray) -> np.ndarray:
+  104:      image = np.clip(image, WINDOW_LOW, WINDOW_HIGH).astype(np.float32, copy=False)
+  105:      return ((image - WINDOW_LOW) / (WINDOW_HIGH - WINDOW_LOW)).astype(
+  106:          np.float32, copy=False
+  107:      )
+  108:  
+*****
+
+***** app_old.py
+  144:      if image.ndim != 3:
+  145:          raise ValueError(
+  146:              f"Expected a 3D CT volume (Z,Y,X); received shape {image.shape}."
+  147:          )
+  148:      if not np.isfinite(image).all():
+  149:          raise ValueError("The uploaded CT contains non-finite voxel values.")
+  150:  
+  151:      normalized = normalize_ct(image)
+  152:      volume = torch.from_numpy(normalized).unsqueeze(0).unsqueeze(0)
+  153:      amp_enabled = device.type == "cuda"
+  154:  
+  155:      with torch.inference_mode():
+***** APP.PY
+  111:      if image.ndim != 3:
+  112:          raise ValueError(f"Expected 3D CT (Z,Y,X); received {image.shape}.")
+  113:      if not np.isfinite(image).all():
+  114:          raise ValueError("CT contains non-finite voxel values.")
+  115:      volume = torch.from_numpy(normalize_ct(image)).unsqueeze(0).unsqueeze(0)
+  116:      amp_enabled = device.type == "cuda"
+  117:      with torch.inference_mode():
+*****
+
+***** app_old.py
+  156:          with torch.autocast(
+  157:              device_type=device.type,
+  158:              dtype=torch.float16,
+  159:              enabled=amp_enabled,
+  160:          ):
+***** APP.PY
+  118:          with torch.autocast(
+  119:              device_type=device.type, dtype=torch.float16, enabled=amp_enabled
+  120:          ):
+*****
+
+***** app_old.py
+  171:              )
+  172:  
+  173:      if logits.shape[1] != NUM_CLASSES:
+  174:          raise RuntimeError(
+  175:              f"Expected 3 output channels, got {logits.shape[1]}."
+  176:          )
+  177:  
+  178:      prediction = (
+  179:          logits.argmax(dim=1)
+  180:          .squeeze(0)
+  181:          .numpy()
+  182:          .astype(np.uint8)
+  183:      )
+  184:      del volume, logits, normalized
+  185:      gc.collect()
+***** APP.PY
+  131:              )
+  132:      if logits.shape[1] != NUM_CLASSES:
+  133:          raise RuntimeError(f"Expected 3 output channels, got {logits.shape[1]}.")
+  134:      prediction = logits.argmax(dim=1).squeeze(0).numpy().astype(np.uint8)
+  135:      del volume, logits
+  136:      gc.collect()
+*****
+
+***** app_old.py
+  190:  
+  191:  def make_overlay(ct_slice: np.ndarray, pred_slice: np.ndarray, alpha: float):
+  192:      fig, ax = plt.subplots(figsize=(9, 8))
+  193:      ax.imshow(ct_slice, cmap="gray", vmin=0, vmax=1)
+  194:      # PA red; PV cyan. Background remains transparent.
+  195:      overlay = np.zeros((*pred_slice.shape, 4), dtype=np.float32)
+  196:      overlay[pred_slice == 1] = (1.0, 0.12, 0.12, alpha)
+  197:      overlay[pred_slice == 2] = (0.05, 0.85, 1.0, alpha)
+  198:      ax.imshow(overlay)
+  199:      ax.set_title("CT with predicted PA (red) and PV (cyan)")
+  200:      ax.axis("off")
+  201:      fig.tight_layout()
+  202:      return fig
+  203:  
+***** APP.PY
+  141:  
+  142:  def geometry_matches(a, b):
+  143:      return (
+  144:          a.GetSize() == b.GetSize()
+  145:          and np.allclose(a.GetSpacing(), b.GetSpacing(), atol=1e-5)
+  146:          and np.allclose(a.GetOrigin(), b.GetOrigin(), atol=1e-4)
+  147:          and np.allclose(a.GetDirection(), b.GetDirection(), atol=1e-5)
+  148:      )
+  149:  
+*****
+
+***** app_old.py
+  204:  
+  205:  def make_3d_plot(prediction: np.ndarray, max_side: int = 160):
+  206:      # Downsample only for display; the saved segmentation remains full resolution.
+  207:      from skimage.measure import marching_cubes
+  208:      import plotly.graph_objects as go
+  209:  
+  210:      stride = max(1, int(np.ceil(max(prediction.shape) / max_side)))
+  211:      sampled = prediction[::stride, ::stride, ::stride]
+  212:      fig = go.Figure()
+  213:  
+  214:      surfaces = [
+  215:          (1, "Pulmonary artery", "red", 0.85),
+  216:          (2, "Pulmonary vein", "cyan", 0.65),
+  217:      ]
+  218:      added = 0
+  219:      for class_id, name, color, opacity in surfaces:
+  220:          binary = (sampled == class_id).astype(np.uint8)
+  221:          if int(binary.sum()) < 8:
+  222:              continue
+  223:          try:
+  224:              vertices, faces, _, _ = marching_cubes(binary, level=0.5)
+  225:          except (ValueError, RuntimeError):
+  226:              continue
+  227:          fig.add_trace(
+  228:              go.Mesh3d(
+  229:                  x=vertices[:, 2] * stride,
+  230:                  y=vertices[:, 1] * stride,
+  231:                  z=vertices[:, 0] * stride,
+  232:                  i=faces[:, 0],
+  233:                  j=faces[:, 1],
+  234:                  k=faces[:, 2],
+  235:                  name=name,
+  236:                  color=color,
+  237:                  opacity=opacity,
+  238:              )
+  239:          )
+  240:          added += 1
+  241:  
+  242:      fig.update_layout(
+  243:          title="3D predicted vascular masks (display downsampled)",
+  244:          scene=dict(
+  245:              xaxis_title="X voxel",
+  246:              yaxis_title="Y voxel",
+  247:              zaxis_title="Z voxel",
+  248:              aspectmode="data",
+  249:          ),
+  250:          height=650,
+  251:          margin=dict(l=0, r=0, t=45, b=0),
+  252:      )
+  253:      return fig, added
+  254:  
+***** APP.PY
+  150:  
+  151:  def read_label_file(label_path: Path, reference_image):
+  152:      label_image = sitk.ReadImage(str(label_path))
+  153:      if not geometry_matches(reference_image, label_image):
+  154:          raise ValueError(
+  155:              "Ground-truth geometry does not match CT "
+  156:              "(size/spacing/origin/direction mismatch)."
+  157:          )
+  158:      labels = sitk.GetArrayFromImage(label_image).astype(np.uint8, copy=False)
+  159:      if not set(np.unique(labels).tolist()).issubset({0, 1, 2}):
+  160:          raise ValueError(f"Ground truth has unexpected labels: {np.unique(labels)}")
+  161:      return labels
+  162:  
+*****
+
+***** app_old.py
+  255:  
+  256:  def save_prediction_nifti(prediction: np.ndarray, reference_image):
+  257:      output_image = sitk.GetImageFromArray(prediction.astype(np.uint8))
+  258:      output_image.CopyInformation(reference_image)
+  259:      temp = tempfile.NamedTemporaryFile(
+  260:          suffix="_neurovessel_v6_1_prediction.nii.gz",
+  261:          delete=False,
+  262:      )
+  263:      temp_path = Path(temp.name)
+  264:      temp.close()
+  265:      sitk.WriteImage(output_image, str(temp_path), True)
+  266:      return temp_path
+  267:  
+***** APP.PY
+  163:  
+  164:  def uid_from_ct_filename(filename: str):
+  165:      lower = filename.lower()
+  166:      if lower.endswith(".nii.gz"):
+  167:          stem = filename[:-7]
+  168:      elif lower.endswith(".nii"):
+  169:          stem = filename[:-4]
+  170:      else:
+  171:          return None
+  172:      if stem.endswith("_ct"):
+  173:          stem = stem[:-3]
+  174:      return stem
+  175:  
+*****
+
+***** app_old.py
+  268:  
+  269:  # ---------------------------------------------------------------------
+  270:  # Sidebar: checkpoint and runtime details
+  271:  # ---------------------------------------------------------------------
+  272:  with st.sidebar:
+  273:      st.header("Model configuration")
+  274:      st.write("**Model:** Residual 3D U-Net V6.1")
+  275:      st.write("**Output classes:** Background / PA / PV")
+  276:      st.write(f"**Patch:** {ROI_SIZE}-¦")
+  277:      st.write(f"**Overlap:** {OVERLAP:.0%}")
+  278:      st.write("**Blending:** Gaussian")
+  279:      st.write("**CT window:** GêÆ1000 to +1000 HU")
+  280:      st.write("**Normalization:** [0, 1]")
+  281:      st.divider()
+  282:      st.caption(f"Checkpoint: `{CHECKPOINT_PATH.name}`")
+  283:      st.caption("Selected validation checkpoint: epoch 29")
+  284:  
+***** APP.PY
+  176:  
+  177:  def matching_validation_label(uid: str):
+  178:      """Return matching GT only when UID is explicitly in validation split."""
+  179:      if not uid or not SPLIT_CSV.is_file():
+  180:          return None, "Validation manifest not found; no automatic GT lookup."
+  181:      split_df = pd.read_csv(SPLIT_CSV)
+  182:      required = {"series_instance_uid", "split"}
+  183:      if not required.issubset(split_df.columns):
+  184:          return None, "Validation manifest is missing required columns."
+  185:      rows = split_df[
+  186:          (split_df["series_instance_uid"].astype(str) == uid)
+  187:          & (split_df["split"].astype(str).str.lower() == "validation")
+  188:      ]
+  189:      if len(rows) != 1:
+  190:          return None, "This uploaded CT is not uniquely identified as a validation case."
+  191:      label_path = LABEL_DIR / f"{uid}_multiclass.nii.gz"
+  192:      if label_path.is_file():
+  193:          return label_path, "Matching validation ground truth found automatically."
+  194:      return None, f"Validation case found, but label file is missing: {label_path}"
+  195:  
+*****
+
+***** app_old.py
+  285:  
+  286:  if not CHECKPOINT_PATH.is_file():
+  287:      st.error(
+  288:          "The selected V6.1 checkpoint was not found. Expected location:\n\n"
+  289:          f"`{CHECKPOINT_PATH}`"
+  290:      )
+  291:      st.stop()
+  292:  
+  293:  device_name = "cuda" if torch.cuda.is_available() else "cpu"
+  294:  try:
+  295:      model, device, model_info = load_model(
+  296:          str(CHECKPOINT_PATH), device_name
+  297:      )
+  298:  except Exception as exc:
+  299:      st.exception(exc)
+  300:      st.stop()
+  301:  
+  302:  col1, col2, col3 = st.columns(3)
+  303:  col1.metric("Inference device", "NVIDIA CUDA" if device.type == "cuda" else "CPU")
+  304:  col2.metric("Selected checkpoint", f"Epoch {model_info['epoch']}")
+  305:  col3.metric("Best validation patch Dice", f"{model_info['best_patch_dice'] * 100:.2f}%")
+  306:  
+  307:  with st.expander("Checkpoint verification"):
+  308:      st.write("SHA-256")
+  309:      st.code(model_info["sha256"])
+  310:      st.caption(
+  311:          "The validation patch Dice shown here is not the independent "
+  312:          "full-volume test Dice."
+  313:      )
+  314:  
+***** APP.PY
+  196:  
+  197:  def dice_precision_recall(pred, gt, class_id):
+  198:      p = pred == class_id
+  199:      g = gt == class_id
+  200:      tp = int(np.logical_and(p, g).sum())
+  201:      fp = int(np.logical_and(p, ~g).sum())
+  202:      fn = int(np.logical_and(~p, g).sum())
+  203:      denom = 2 * tp + fp + fn
+  204:      dice = (2 * tp / denom) if denom else float("nan")
+  205:      precision = tp / (tp + fp) if (tp + fp) else 0.0
+  206:      recall = tp / (tp + fn) if (tp + fn) else 0.0
+  207:      return dice, precision, recall
+  208:  
+*****
+
+Resync Failed.  Files are too different.
+***** app_old.py
+  315:  
+  316:  st.markdown("### 1. Upload a chest CT volume")
+  317:  uploaded_file = st.file_uploader(
+  318:      "Upload a 3D NIfTI CT file (.nii or .nii.gz)",
+  319:      type=["nii", "gz"],
+  320:      help="Upload a 3D CT volume in NIfTI format. This demo expects CT voxel "
+  321:           "values compatible with the training HU window.",
+  322:  )
+  323:  
+  324:  if uploaded_file is None:
+  325:      st.info(
+  326:          "Upload a 3D NIfTI CT volume to run actual V6.1 inference. "
+  327:          "The application does not generate simulated predictions."
+  328:      )
+  329:      st.stop()
+  330:  
+  331:  if not (
+  332:      uploaded_file.name.lower().endswith(".nii")
+  333:      or uploaded_file.name.lower().endswith(".nii.gz")
+  334:  ):
+  335:      st.error("Please upload a .nii or .nii.gz NIfTI file.")
+  336:      st.stop()
+  337:  
+  338:  if uploaded_file.size > 2 * 1024 * 1024 * 1024:
+  339:      st.error("File is larger than the 2 GB demo upload limit.")
+  340:      st.stop()
+  341:  
+  342:  try:
+  343:      with tempfile.NamedTemporaryFile(suffix=".nii.gz", delete=False) as handle:
+  344:          handle.write(uploaded_file.getbuffer())
+  345:          input_path = Path(handle.name)
+  346:  
+  347:      reference_image = sitk.ReadImage(str(input_path))
+  348:      ct_array = sitk.GetArrayFromImage(reference_image).astype(
+  349:          np.float32, copy=False
+  350:      )
+  351:      if ct_array.ndim != 3:
+  352:          raise ValueError(
+  353:              f"Uploaded image is not 3D. Array shape: {ct_array.shape}"
+  354:          )
+  355:      if not np.isfinite(ct_array).all():
+  356:          raise ValueError("Uploaded CT contains NaN or infinite values.")
+  357:  except Exception as exc:
+  358:      st.error(f"Could not read the uploaded NIfTI CT: {exc}")
+  359:      st.stop()
+  360:  
+  361:  spacing_xyz = reference_image.GetSpacing()
+  362:  origin_xyz = reference_image.GetOrigin()
+  363:  direction = reference_image.GetDirection()
+  364:  
+  365:  st.markdown("### 2. CT volume information")
+  366:  m1, m2, m3, m4 = st.columns(4)
+  367:  m1.metric("Volume shape (Z, Y, X)", " +ù ".join(map(str, ct_array.shape)))
+  368:  m2.metric("Spacing (mm)", " +ù ".join(f"{v:.3g}" for v in spacing_xyz))
+  369:  m3.metric("Voxel range", f"{np.min(ct_array):.0f} to {np.max(ct_array):.0f}")
+  370:  m4.metric("File size", f"{uploaded_file.size / (1024**2):.1f} MB")
+  371:  
+  372:  if "nv_prediction" not in st.session_state or st.button(
+  373:      "Run V6.1 segmentation", type="primary", use_container_width=True
+  374:  ):
+  375:      try:
+  376:          with st.spinner(
+  377:              "Running full-volume 3D segmentation. This may take several minutes..."
+  378:          ):
+  379:              prediction = run_inference(model, ct_array, device)
+  380:          st.session_state["nv_prediction"] = prediction
+  381:          st.session_state["nv_input_name"] = uploaded_file.name
+  382:          st.session_state["nv_input_shape"] = tuple(ct_array.shape)
+  383:      except Exception as exc:
+  384:          st.exception(exc)
+  385:          st.stop()
+  386:  
+  387:  prediction = st.session_state.get("nv_prediction")
+  388:  if prediction is None:
+  389:      st.stop()
+  390:  
+  391:  if tuple(prediction.shape) != tuple(ct_array.shape):
+  392:      st.error("Prediction shape does not match the uploaded CT. Please rerun inference.")
+  393:      st.stop()
+  394:  
+  395:  st.success("V6.1 inference completed.")
+  396:  
+  397:  # ---------------------------------------------------------------------
+  398:  # Results and measurements
+  399:  # ---------------------------------------------------------------------
+  400:  st.markdown("### 3. Segmentation summary")
+  401:  pa_voxels = int(np.count_nonzero(prediction == 1))
+  402:  pv_voxels = int(np.count_nonzero(prediction == 2))
+  403:  voxel_volume_mm3 = float(np.prod(spacing_xyz))
+  404:  pa_volume_cm3 = pa_voxels * voxel_volume_mm3 / 1000.0
+  405:  pv_volume_cm3 = pv_voxels * voxel_volume_mm3 / 1000.0
+  406:  
+  407:  r1, r2, r3 = st.columns(3)
+  408:  r1.metric("Predicted PA volume", f"{pa_volume_cm3:.2f} cm-¦")
+  409:  r2.metric("Predicted PV volume", f"{pv_volume_cm3:.2f} cm-¦")
+  410:  r3.metric("Predicted foreground voxels", f"{pa_voxels + pv_voxels:,}")
+  411:  
+  412:  st.caption(
+  413:      "Volumes are computed from predicted voxel counts and the NIfTI voxel "
+  414:      "spacing. They are segmentation-derived measurements, not clinical "
+***** APP.PY
+  209:  
+  210:  def overlay_rgba(mask, class_id, color, alpha):
+  211:      rgba = np.zeros((*mask.shape, 4), dtype=np.float32)
+  212:      rgba[mask == class_id] = (*color, alpha)
+  213:      return rgba
+  214:  
+  215:  
+  216:  def make_five_panel_figure(ct_slice, gt_slice, pred_slice, slice_index):
+  217:      """
+  218:      Five-panel layout in the style of the supplied reference figures.
+  219:      GT PA=green, GT PV=cyan; prediction PA=red, prediction PV=magenta.
+  220:      """
+  221:      fig, axes = plt.subplots(1, 5, figsize=(22, 5.2), constrained_layout=True)
+  222:      ct_display = normalize_ct(ct_slice)
+  223:      titles = [
+  224:          "Original CT",
+  225:          "Ground Truth: PA + PV",
+  226:          "Prediction: PA + PV",
+  227:          "PA: GT / Prediction",
+  228:          "PV: GT / Prediction",
+  229:      ]
+  230:      for ax, title in zip(axes, titles):
+  231:          ax.set_title(title, fontsize=10, fontweight="bold")
+  232:          ax.axis("off")
+  233:  
+  234:      axes[0].imshow(ct_display, cmap="gray", vmin=0, vmax=1)
+  235:  
+  236:      # Ground truth combined: PA green, PV cyan.
+  237:      axes[1].imshow(ct_display, cmap="gray", vmin=0, vmax=1)
+  238:      axes[1].imshow(overlay_rgba(gt_slice, 1, (0.10, 1.0, 0.12), 0.75))
+  239:      axes[1].imshow(overlay_rgba(gt_slice, 2, (0.0, 0.85, 1.0), 0.75))
+  240:  
+  241:      # Prediction combined: PA red, PV magenta.
+  242:      axes[2].imshow(ct_display, cmap="gray", vmin=0, vmax=1)
+  243:      axes[2].imshow(overlay_rgba(pred_slice, 1, (1.0, 0.12, 0.10), 0.75))
+  244:      axes[2].imshow(overlay_rgba(pred_slice, 2, (1.0, 0.0, 0.85), 0.75))
+  245:  
+  246:      # PA comparison: GT yellow, prediction red; overlap becomes orange-like.
+  247:      axes[3].imshow(ct_display, cmap="gray", vmin=0, vmax=1)
+  248:      axes[3].imshow(overlay_rgba(gt_slice, 1, (1.0, 0.9, 0.0), 0.8))
+  249:      axes[3].imshow(overlay_rgba(pred_slice, 1, (1.0, 0.12, 0.10), 0.55))
+  250:  
+  251:      # PV comparison: GT cyan, prediction magenta.
+  252:      axes[4].imshow(ct_display, cmap="gray", vmin=0, vmax=1)
+  253:      axes[4].imshow(overlay_rgba(gt_slice, 2, (0.0, 0.85, 1.0), 0.8))
+  254:      axes[4].imshow(overlay_rgba(pred_slice, 2, (1.0, 0.0, 0.85), 0.55))
+  255:  
+  256:      fig.suptitle(
+  257:          f"NeuroVessel V6.1 GÇö Axial slice {slice_index}",
+  258:          fontsize=13, fontweight="bold"
+  259:      )
+  260:      return fig
+  261:  
+  262:  
+  263:  def make_prediction_only_figure(ct_slice, pred_slice, slice_index):
+  264:      fig, axes = plt.subplots(1, 2, figsize=(11, 5), constrained_layout=True)
+  265:      axes[0].imshow(normalize_ct(ct_slice), cmap="gray", vmin=0, vmax=1)
+  266:      axes[0].set_title("Original CT")
+  267:      axes[1].imshow(normalize_ct(ct_slice), cmap="gray", vmin=0, vmax=1)
+  268:      axes[1].imshow(overlay_rgba(pred_slice, 1, (1.0, 0.12, 0.10), 0.7))
+  269:      axes[1].imshow(overlay_rgba(pred_slice, 2, (1.0, 0.0, 0.85), 0.7))
+  270:      axes[1].set_title("Prediction: PA (red) + PV (magenta)")
+  271:      for ax in axes:
+  272:          ax.axis("off")
+  273:      fig.suptitle(f"NeuroVessel V6.1 GÇö Axial slice {slice_index}")
+  274:      return fig
+  275:  
+  276:  
+  277:  def make_3d_plot(prediction: np.ndarray, max_side: int = 160):
+  278:      from skimage.measure import marching_cubes
+  279:      import plotly.graph_objects as go
+  280:  
+  281:      stride = max(1, int(np.ceil(max(prediction.shape) / max_side)))
+  282:      sampled = prediction[::stride, ::stride, ::stride]
+  283:      fig = go.Figure()
+  284:      for class_id, name, color, opacity in [
+  285:          (1, "Pulmonary artery", "red", 0.82),
+  286:          (2, "Pulmonary vein", "magenta", 0.62),
+  287:      ]:
+  288:          binary = (sampled == class_id).astype(np.uint8)
+  289:          if int(binary.sum()) < 8:
+  290:              continue
+  291:          try:
+  292:              vertices, faces, _, _ = marching_cubes(binary, level=0.5)
+  293:          except (ValueError, RuntimeError):
+  294:              continue
+  295:          fig.add_trace(
+  296:              go.Mesh3d(
+  297:                  x=vertices[:, 2] * stride,
+  298:                  y=vertices[:, 1] * stride,
+  299:                  z=vertices[:, 0] * stride,
+  300:                  i=faces[:, 0], j=faces[:, 1], k=faces[:, 2],
+  301:                  name=name, color=color, opacity=opacity,
+  302:              )
+  303:          )
+  304:      fig.update_layout(
+  305:          title="3D predicted vascular masks (display downsampled)",
+  306:          scene=dict(
+  307:              xaxis_title="X voxel", yaxis_title="Y voxel",
+  308:              zaxis_title="Z voxel", aspectmode="data"
+*****
+

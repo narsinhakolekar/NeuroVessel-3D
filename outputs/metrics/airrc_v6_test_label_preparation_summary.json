@@ -1,0 +1,19 @@
+{
+  "purpose": "Prepare ground-truth labels for one final independent locked test evaluation",
+  "split_counts": {
+    "train": 202,
+    "validation": 26,
+    "test": 26
+  },
+  "test_cases_prepared": 26,
+  "source_label_mapping": {
+    "0,1,2": 0,
+    "3": 1,
+    "4": 2
+  },
+  "ct_images_read": 0,
+  "train_or_validation_volumes_read": 0,
+  "checkpoint_loaded": false,
+  "all_test_labels_verified": true,
+  "results_csv": "C:\\Users\\narsi\\Desktop\\Coding\\NeuroVessel\\outputs\\metrics\\airrc_v6_test_label_preparation.csv"
+}

@@ -1,0 +1,124 @@
+{
+  "project": "NeuroVessel",
+  "model": "V5B Residual 3D U-Net",
+  "audit": "3D error and connected-component analysis",
+  "threshold": 0.7,
+  "patients_evaluated": 26,
+  "locked_test_set_loaded": false,
+  "connectivity_definition": "6-connectivity uses face neighbours; 26-connectivity includes face, edge and corner neighbours.",
+  "minimum_component_size_reported": 10,
+  "component_pruning_applied": false,
+  "metrics": {
+    "dice": {
+      "mean": 0.6735096799904604,
+      "median": 0.6895246898191698,
+      "std": 0.05607738310567806,
+      "minimum": 0.5510363647773355,
+      "maximum": 0.7426093609783362
+    },
+    "precision": {
+      "mean": 0.5938010066918147,
+      "median": 0.6067135203935585,
+      "std": 0.06743147999106576,
+      "minimum": 0.4214775896737368,
+      "maximum": 0.6795070206832068
+    },
+    "recall": {
+      "mean": 0.7843612124299901,
+      "median": 0.799003031500723,
+      "std": 0.05750264008901881,
+      "minimum": 0.5890207816060679,
+      "maximum": 0.8508170287747062
+    },
+    "specificity": {
+      "mean": 0.9966511322272887,
+      "median": 0.9967694315134176,
+      "std": 0.0009905148686023407,
+      "minimum": 0.9941256367288651,
+      "maximum": 0.9984045232295778
+    },
+    "fp_fraction_of_prediction": {
+      "mean": 0.4061989933081852,
+      "median": 0.3932864796064415,
+      "std": 0.06743147999106576,
+      "minimum": 0.3204929793167932,
+      "maximum": 0.5785224103262632
+    },
+    "fn_fraction_of_ground_truth": {
+      "mean": 0.21563878757000987,
+      "median": 0.20099696849927695,
+      "std": 0.057502640089018814,
+      "minimum": 0.1491829712252938,
+      "maximum": 0.4109792183939322
+    },
+    "prediction_to_ground_truth_ratio": {
+      "mean": 1.336958836983086,
+      "median": 1.3388042702694951,
+      "std": 0.17703261452247396,
+      "minimum": 0.9613482534607667,
+      "maximum": 1.887635661951965
+    },
+    "pred_26_component_count": {
+      "mean": 782.1538461538462,
+      "median": 718.0,
+      "std": 212.0659694166308,
+      "minimum": 485.0,
+      "maximum": 1309.0
+    },
+    "gt_26_component_count": {
+      "mean": 78.46153846153847,
+      "median": 74.0,
+      "std": 39.86801301216881,
+      "minimum": 30.0,
+      "maximum": 201.0
+    },
+    "pred_26_largest_component_fraction": {
+      "mean": 0.6429585117874429,
+      "median": 0.651347179612568,
+      "std": 0.08074537448328864,
+      "minimum": 0.4619165181564017,
+      "maximum": 0.7761833357936255
+    },
+    "pred_26_small_components_lt_10": {
+      "mean": 414.88461538461536,
+      "median": 404.5,
+      "std": 105.90989639238703,
+      "minimum": 243.0,
+      "maximum": 697.0
+    },
+    "fp_26_component_count": {
+      "mean": 2395.4615384615386,
+      "median": 2344.0,
+      "std": 649.7967208762587,
+      "minimum": 1131.0,
+      "maximum": 4425.0
+    },
+    "fn_26_component_count": {
+      "mean": 2617.8076923076924,
+      "median": 2649.0,
+      "std": 697.555217555185,
+      "minimum": 869.0,
+      "maximum": 3815.0
+    },
+    "pred_26_components_not_intersecting_reference": {
+      "mean": 557.8846153846154,
+      "median": 521.0,
+      "std": 170.04877580813732,
+      "minimum": 351.0,
+      "maximum": 1044.0
+    }
+  },
+  "interpretation_limitations": [
+    "Connected components are voxel-connectivity measures, not anatomical branch labels.",
+    "Disconnected regions can reflect annotation gaps as well as model fragmentation.",
+    "A predicted component intersecting the GT is not necessarily anatomically correct.",
+    "Centerline and branch-level topology require a separate analysis."
+  ],
+  "total_false_positive_voxels": 3276498,
+  "total_false_negative_voxels": 1266951,
+  "total_predicted_voxels": 8035642,
+  "total_ground_truth_voxels": 6026095,
+  "macro_dice": 0.6735096799904604,
+  "micro_dice": 0.6768927622526293,
+  "runtime_seconds": 283.18012499809265
+}

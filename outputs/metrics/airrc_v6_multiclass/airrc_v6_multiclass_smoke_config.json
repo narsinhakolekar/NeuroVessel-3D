@@ -1,0 +1,39 @@
+{
+  "project": "NeuroVessel",
+  "version": "V6",
+  "task": "Three-class pulmonary artery and pulmonary vein segmentation",
+  "architecture": "Residual 3D U-Net",
+  "base_channels": 8,
+  "trainable_parameters": 1435027,
+  "input_channels": 1,
+  "output_classes": 3,
+  "class_mapping": {
+    "0": "Background: original classes 0, 1 and 2",
+    "1": "Pulmonary artery: original class 3",
+    "2": "Pulmonary vein: original class 4"
+  },
+  "patch_size": 64,
+  "batch_size": 1,
+  "patches_per_patient": 2,
+  "training_sampling": "One PA-centred patch and one PV-centred patch per patient per epoch.",
+  "validation_samples_per_class": 1,
+  "epochs_requested": 1,
+  "learning_rate": 0.0002,
+  "weight_decay": 1e-05,
+  "class_weights": [
+    0.2,
+    1.0,
+    1.0
+  ],
+  "loss": "0.5 weighted cross entropy + 0.5 foreground soft Dice",
+  "window_low": -1000,
+  "window_high": 1000,
+  "optimizer": "AdamW",
+  "scheduler": "ReduceLROnPlateau",
+  "amp": true,
+  "device": "cuda",
+  "seed": 42,
+  "smoke_test": true,
+  "validation_method": "Deterministic class-centred patches. Separate per-patient PA and PV patch Dice, then macro-average across patients. Not full-volume evaluation.",
+  "test_partition_loaded": false
+}

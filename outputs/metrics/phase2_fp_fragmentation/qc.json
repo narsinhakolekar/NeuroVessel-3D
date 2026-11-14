@@ -1,0 +1,25 @@
+{
+  "evaluation": "locked_test_false_positive_fragmentation_diagnostics",
+  "expected_cases": 26,
+  "processed_cases": 26,
+  "unique_test_uids": 26,
+  "geometry_checks_passed": 26,
+  "all_label_values_valid": true,
+  "connectivity": "26-neighbour",
+  "component_overlap_definition": "fraction of each predicted component's voxels overlapping the same-class ground-truth mask",
+  "false_positive_definition": "predicted class voxels outside the same-class ground-truth mask",
+  "lung_region_analysis": "not performed; no independently validated lung mask was supplied",
+  "limitations": [
+    "Connected components are digital objects, not anatomical branches.",
+    "Zero same-class overlap does not prove a component is outside the lungs.",
+    "No components were removed and no predictions were modified.",
+    "No model, threshold, or post-processing tuning was performed.",
+    "Test set remains evaluation-only."
+  ],
+  "outputs": [
+    "outputs\\metrics\\phase2_fp_fragmentation\\case_diagnostics.csv",
+    "outputs\\metrics\\phase2_fp_fragmentation\\predicted_component_diagnostics.csv",
+    "outputs\\metrics\\phase2_fp_fragmentation\\summary.csv",
+    "outputs\\metrics\\phase2_fp_fragmentation\\qc.json"
+  ]
+}

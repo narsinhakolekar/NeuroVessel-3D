@@ -1,0 +1,4 @@
+patient_id,checkpoint,checkpoint_epoch,roi_size,overlap,blend_mode,argmax_agreement,status
+LIDC-IDRI-0529,C:\Users\narsi\Desktop\Coding\NeuroVessel\outputs\checkpoints\airrc_v6_1_multiclass_best.pt,29,"(96, 96, 96)",0.5,gaussian,1.0,PASS
+LIDC-IDRI-0763,C:\Users\narsi\Desktop\Coding\NeuroVessel\outputs\checkpoints\airrc_v6_1_multiclass_best.pt,29,"(96, 96, 96)",0.5,gaussian,1.0,PASS
+LIDC-IDRI-0848,C:\Users\narsi\Desktop\Coding\NeuroVessel\outputs\checkpoints\airrc_v6_1_multiclass_best.pt,29,"(96, 96, 96)",0.5,gaussian,1.0,PASS

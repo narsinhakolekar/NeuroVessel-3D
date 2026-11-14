@@ -1,0 +1,61 @@
+{
+    "model": "NeuroVessel V4",
+    "checkpoint_epoch": 8,
+    "threshold": 0.75,
+    "patients_analyzed": [
+        "PA000314",
+        "PA000194",
+        "PA000005"
+    ],
+    "test_set_evaluated": false,
+    "results": [
+        {
+            "patient_id": "PA000314",
+            "ground_truth_voxels": 294825,
+            "predicted_voxels": 405341,
+            "true_positive_voxels": 98306,
+            "false_positive_voxels": 307035,
+            "false_negative_voxels": 196519,
+            "dice": 0.28080769417538126,
+            "precision": 0.24252666273581996,
+            "recall": 0.3334384804545069,
+            "predicted_to_gt_ratio": 1.3748528788264225,
+            "gt_component_count": 1,
+            "pred_component_count": 1033,
+            "gt_largest_component": 294825,
+            "pred_largest_component": 42080
+        },
+        {
+            "patient_id": "PA000194",
+            "ground_truth_voxels": 367096,
+            "predicted_voxels": 424339,
+            "true_positive_voxels": 104134,
+            "false_positive_voxels": 320205,
+            "false_negative_voxels": 262962,
+            "dice": 0.2631523751160866,
+            "precision": 0.24540285007977114,
+            "recall": 0.2836696667901584,
+            "predicted_to_gt_ratio": 1.1559346873842264,
+            "gt_component_count": 1,
+            "pred_component_count": 705,
+            "gt_largest_component": 367096,
+            "pred_largest_component": 42880
+        },
+        {
+            "patient_id": "PA000005",
+            "ground_truth_voxels": 293043,
+            "predicted_voxels": 389524,
+            "true_positive_voxels": 63635,
+            "false_positive_voxels": 325889,
+            "false_negative_voxels": 229408,
+            "dice": 0.18645788618553197,
+            "precision": 0.16336605703371293,
+            "recall": 0.21715243155441352,
+            "predicted_to_gt_ratio": 1.3292383711605464,
+            "gt_component_count": 1,
+            "pred_component_count": 1235,
+            "gt_largest_component": 293043,
+            "pred_largest_component": 26376
+        }
+    ]
+}
