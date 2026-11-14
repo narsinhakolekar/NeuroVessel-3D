@@ -1,0 +1,35 @@
+﻿# Medical imaging datasets
+data/
+# Generated research outputs
+outputs/
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+# Virtual environments
+.venv/
+venv/
+env/
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Temporary files
+*.log
+*.tmp
+*.bak
+# Medical imaging and model files
+*.pt
+*.pth
+*.ckpt
+*.nii
+*.nii.gz
+*.mhd
+*.raw
